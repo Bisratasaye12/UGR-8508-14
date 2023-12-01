@@ -1,0 +1,903 @@
+/* Flex styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    padding: 10px;
+
+    background-color: #fedbd0;
+    color: #442e2c;
+
+}
+
+
+
+.home .menu li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.home .menu li a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.home .logo {
+    background-color: #442e2c;
+    color: #fedbd0;
+    width:  50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 14px;
+}
+
+.home .close-menu {
+    padding-left: 10px;
+}
+
+.home .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    z-index: 100;
+    background-color: coral;
+    transition: all 0.2s ease-in-out;
+}
+
+.home #check {
+    display: none;
+}
+
+.home .open-menu,
+.home .close-menu {
+    display: block;
+}
+
+.home #check:checked ~ .menu {
+    left: 0;
+    bottom: 50;
+}
+
+.home .download-btn {
+    background-color: #442e2c;
+    color:#fedbd0;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 10px;
+    height: 50px;
+    align-self: center;
+}
+
+.home a.download-btn {
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* main */
+
+.home main {
+    background-color:rgb(240, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.home section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home section.hero ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.home section ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.home section li:not(:first-child),
+.home p {
+    position: static;
+    top: 80;
+    left: 500;
+    z-index: 1;
+    transform: translateZ(0);
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.home section li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.home section li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.home section li:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.home section li:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+.home section li:nth-child(6) {
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.home img {
+    width: 20rem;
+    height: 300px;
+    margin: 5px;
+    object-fit: cover;
+    box-shadow: #442e2c 5px 5px 5px;
+}
+
+.home h1 {
+    text-align: center;
+    margin: 10px;
+    font-family: rela;
+}
+
+.home h2 {
+    text-align: justify;
+    margin: 5px;
+}
+
+.home p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.home .p-one {
+    animation-delay: 0.3s;
+}
+
+.home .p-two {
+    animation-delay: 3.5s;
+}
+
+.home .image-sliders {
+    display: none;
+}
+
+/* footer */
+
+.home footer {
+    background-color: peru;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home p.copyright {
+    text-align: center;
+}
+
+.home address.social-media-links {
+    display: flex;
+    justify-content: center;
+}
+
+.home address.social-media-links a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+
+
+
+/* ABOUT ME STYLES */
+
+
+.about-me header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80px;
+    padding: 10px;
+
+    background-color: #fedbd0;
+    color: #442e2c;
+
+}
+
+
+
+.about-me .menu li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about-me .menu li a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.about-me .logo {
+    align-self: center;
+    background-color: #442e2c;
+    color: #fedbd0;
+    width:  50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 14px;
+}
+
+.about-me .close-menu {
+    padding-left: 10px;
+}
+label{
+    display: flex;
+}
+.about-me .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    z-index: 100;
+    background-color: #fedbd0;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-me #check {
+    display: none;
+}
+
+.about-me .open-menu,
+.about-me .close-menu {
+    display: block;
+}
+
+.about-me #check:checked ~ .menu {
+    left: 0;
+    bottom: 50;
+}
+
+
+
+/* main */
+.about-me h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+
+.about-me h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-me {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+.about-me dd{
+    font-weight: 400;
+}
+.about-me main {
+    background-color:rgb(240, 233, 233) ;
+    padding: 5px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-me main dl li{
+    list-style-type: none;
+    margin: 3px;
+}
+
+.about-me img{
+    width: 80%;
+    margin: 5px;
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+    object-fit: cover;
+   
+}
+
+.about-me dl{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+}
+
+.about-me dt, .about-me dd{
+    margin: 5px;
+}
+
+.about-me .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.about-me p{
+    text-align: justify;
+    gap: 30px;
+}
+
+.about-me .videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: black solid 15px;
+}
+
+.about-me iframe{
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+}
+
+.about-me main aside{
+    display: none;
+}
+
+/* footer */
+
+.about-me footer{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: peru;
+}
+
+.about-me footer aside li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.about-me footer aside li a{
+    text-decoration: none;
+    color: black;
+}
+
+.about-me footer address{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+}
+
+.about-me footer address a{
+    margin-left: 20px;
+    color: #442e2c;
+}
+
+.about-me aside{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-me a.Portfolio-btn{
+    align-self: center;
+    background-color: #442e2c;
+    color: white;
+    margin-left: 40px;
+    padding: 5px;
+}
+
+.about-me p.copyright{
+    align-self: center;
+}
+
+
+
+
+.portfolio header {
+    background-color: #fedbd0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    position: relative;
+    padding: 20px;
+}
+
+.portfolio nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.portfolio label {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.portfolio .nav-bar {
+    display: flex;
+}
+
+.portfolio .menu li {
+    list-style: none;
+    margin-top: 40px;
+    
+}
+
+.portfolio .menu li a {
+    padding:20px ;
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio i {
+    font-size: 24px;
+}
+
+.portfolio .logo {
+    background-color: #442e2c;
+    margin-right: 100px;
+    color:#fedbd0;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.portfolio .open-menu {
+    padding-top: 6px;
+
+}
+
+.portfolio .close-menu {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.portfolio .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 10;
+    right: -100%;
+    z-index: 100;
+    background-color: #fedbd0;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio #check {
+    display: none;
+}
+
+.portfolio .open-menu,
+.portfolio .close-menu {
+    display: block;
+}
+
+.portfolio #check:checked ~ .menu {
+    right: 0;
+    bottom: 50;
+}
+
+/* main */
+.portfolio main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.portfolio >*{
+    display: flex;
+    flex-direction: column;
+}
+.prev.portfolio{
+    display: none;
+}
+.next.portfolio{
+    display: none;
+}
+
+
+.portfolio article {
+    background-color: #fedbd0;
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    scroll-snap-type: x;
+}
+
+.portfolio main li {
+    list-style: none;
+    
+}
+
+.portfolio main aside {
+    display: none;
+}
+
+.portfolio section {
+    background-color: #442e2c;
+    margin: 10px;
+    padding: 20px;
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    scroll-snap-align: start;
+}
+
+/* footer */
+.portfolio footer {
+    display: flex;
+    flex-direction: column;
+    background-color: peru;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.portfolio footer aside {
+    display: flex;
+    flex-direction: column;
+    align-items: safe;
+}
+
+.portfolio footer aside h2 {
+    font-size: 1.3rem;
+}
+.portfolio input{
+        display: none;
+}
+.image-sliders{
+    display: none;
+}
+.portfolio footer aside a {
+    margin: 10px;
+}
+
+.portfolio footer address {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio footer address a {
+    margin: 10px;
+}
+
+
+/* Services */
+.service header {
+    background-color: #fedbd0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    position: relative;
+    padding: 20px;
+}
+
+.service nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.service label {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.service .nav-bar {
+    display: flex;
+}
+
+.service .menu li {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.service .menu li a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.service i {
+    font-size: 24px;
+}
+
+.service .logo {
+    background-color: #442e2c;
+    color: #fedbd0;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.service .open-menu {
+    padding-top: 6px;
+}
+
+.service .close-menu {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.service .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 10;
+    right: -100%;
+    z-index: 100;
+    background-color: #fedbd0;
+    transition: all 0.2s ease-in-out;
+}
+
+.service #check {
+    display: none;
+}
+
+.service .open-menu,
+.service .close-menu {
+    display: block;
+}
+
+.service #check:checked ~ .menu {
+    right: 0;
+    bottom: 50;
+}
+
+/* main */
+
+.service main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+
+.service main p {
+    text-align: justify;
+}
+
+.service .intro {
+    background-image: url(images/service.jpg);
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.service section i {
+    font-size: 30px;
+}
+
+.service main aside {
+    display: none;
+}
+
+/* footer */
+
+.service footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: peru;
+}
+
+.service footer aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.service footer aside h2 {
+    font-size: 1.3rem;
+}
+
+.service footer aside a {
+    margin: 10px;
+}
+
+.service footer ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.service footer address {
+    display: flex;
+    align-items: center;
+}
+
+.service footer address a {
+    margin: 10px;
+}
+
+
+/* Contact */
+
+.contact header{
+    background-color: #fedbd0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    position: relative;
+    padding: 20px;    
+}
+
+.contact nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.contact label{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contact .nav-bar{
+    display: flex;
+}
+.contact .menu li {
+    list-style: none;
+    margin-top: 40px;
+}
+.contact .menu li a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.contact i{
+    font-size: 24px;
+}
+.contact .logo{
+    background-color: #442e2c;
+    color: #fedbd0;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.contact .open-menu{
+    padding-top: 6px;  
+}
+.contact .close-menu{
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.contact .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 10;
+    right: -100%;
+    z-index: 100;
+    background-color: #fedbd0;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact #check{
+    display: none;
+}
+.contact .open-menu, .contact .close-menu {
+    display: block;
+}
+.contact #check:checked ~ .menu {
+    right: 0;
+    bottom: 50;
+}
+
+/* main */
+
+.contact main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact main aside{
+    display: none;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30vh;
+}
+
+/* footer */
+
+
+.contact footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: peru;
+}
+
+.contact footer aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contact footer aside ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.contact #social-media-links{
+    align-self: center;
+    display: flex;
+    gap: 12px;
+    color: #442e2c;
+
+}
+
+.contact .copyright{
+    align-self: center;
+}
