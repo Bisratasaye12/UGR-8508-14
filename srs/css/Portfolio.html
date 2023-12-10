@@ -9,24 +9,24 @@
 </head>
 <body class="portfolio">
     <header class="portfolio">
-        <nav class="portfolio">
-            <i class="logo portfolio">BA</i>
-            <ul class="nav-bar portfolio">
-                <input type="checkbox" id="check" />
-                <span class="menu portfolio">
-                <label for="check" class="close-menu portfolio"
-                    ><i class="fas fa-times portfolio"></i
-                ></label>
-                <li class="portfolio"> <a href="#" class="portfolio"> Home </a> </li>
-                <li class="portfolio"> <a href="About_Me.html" class="portfolio"> About Me </a> </li>
-                <li class="portfolio"> <a href="Portfolio.html" class="portfolio"> Portfolio </a> </li>
-                <li class="portfolio"> <a href="Services.html" class="portfolio"> Services </a> </li>
-                <li class="portfolio"> <a href="Contact.html" class="portfolio"> Contact </a> </li>
-                </span>
-            </ul>
-            <label for="check" class="open-menu portfolio"><i class="fa-solid fa-bars portfolio"></i></label>
+        <nav class="portfolio nav-bar">
+                <label for="check" class="control-menu portfolio">
+                    <i class="fas fa-times close-menu portfolio"></i>
+                    <i class="fa-solid fa-bars open-menu portfolio"></i>
+                    <input type="checkbox" id="check" />
+                </label>
+                <ul class="menu portfolio">
+                    
+                    <li class="portfolio"> <a href="index.html" class="portfolio"> Home </a> </li>
+                    <li class="portfolio"> <a href="About_Me.html" class="portfolio"> About Me </a> </li>
+                    <li class="portfolio"> <a href="Portfolio.html" class="portfolio"> Portfolio </a> </li>
+                    <li class="portfolio"> <a href="Services.html" class="portfolio"> Services </a> </li>
+                    <li class="portfolio"> <a href="Contact.html" class="portfolio"> Contact </a> </li>
+                </ul>
         </nav>
+        <i class="logo portfolio">BA</i>
     </header>
+
 
     <main class="portfolio">
         <h2 class="portfolio"> PORTFOLIO </h2>
@@ -35,33 +35,33 @@
             <!-- Background image will be added using CSS -->
             <!-- sections that will show one at a time using sliders -->
             
-            <section class="portfolio">
-                <h4 class="portfolio">Python</h4>
-                <p class="portfolio">I possess intermediate-level proficiency in Python. My skills extend to working with data structures, handling exceptions, and implementing object-oriented programming principles.</p>
-            </section>
+            <div class="sections portfolio">
+                <section class="portfolio python">
+                    <h4 class="portfolio">Python</h4>
+                    <p class="portfolio">I possess intermediate-level proficiency in Python. My skills extend to working with data structures, handling exceptions, and implementing object-oriented programming principles.</p>
+                </section>
+    
+                <section class="portfolio oop">
+                    <h4 class="portfolio">OOP</h4>
+                    <p class="portfolio">I have a work-ready skill on Object Oriented programming specially through Java Programming language.</p>
+                </section>
+    
+                <section class="portfolio design">
+                    <h4 class="portfolio">Design</h4>
+                    <p class="portfolio">I have hands-on experience in UI/UX design using Figma.</p>
+                </section>
+    
+                <section class="portfolio web-dev">
+                    <h4 class="portfolio">Web development</h4>
+                    <p class="portfolio">I currently have MERN web development stack.</p>
+                </section>
 
-            <section class="portfolio">
-                <h4 class="portfolio">OOP</h4>
-                <p class="portfolio">I have a work-ready skill on Object Oriented programming specially through Java Programming language.</p>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Design</h4>
-                <p class="portfolio">I have hands-on experience in UI/UX design using Figma.</p>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Web development</h4>
-                <p class="portfolio">I currently have MERN web development stack.</p>
-            </section>
+            </div>
+            
 
             <!-- buttons to toggle between sections-->
             <div class="image-sliders portfolio">
                 <button class="prev portfolio">&lt;</button>
-                <button class="next portfolio">&gt;</button>
-            </div>
-
-            <div class="active-image-indicators portfolio">
                 <!-- small circular section indicators-->
                 <div class="indicator portfolio">
                     <input type="radio" name="dot" id="one">
@@ -69,112 +69,121 @@
                     <input type="radio" name="dot" id="three">
                     <input type="radio" name="dot" id="four">
                 </div>
+                <button class="next portfolio">&gt;</button>
             </div>
+
+            
         </article>
 
         <article class="portfolio">
             <h3 class="portfolio">Projects</h3>
 
-            <section class="portfolio">
-                <h4 class="portfolio">Calculator</h4>
-                <p class="portfolio">Calculator using HTML, CSS and javascript.</p>
-            </section>
+            <div class="sections portfolio">
+                <section class="portfolio calc">
+                    <h4 class="portfolio">Calculator</h4>
+                    <p class="portfolio">Calculator using HTML, CSS and javascript.</p>
+                </section>
+    
+                <section class="portfolio website">
+                    <h4 class="portfolio">Website</h4>
+                    <p class="portfolio">Profile and portfolio website using HTML, CSS and javascript.</p>
+                </section>
+    
 
-            <section class="portfolio">
-                <h4 class="portfolio">Website</h4>
-                <p class="portfolio">Profile and portfolio website using HTML, CSS and javascript.</p>
-            </section>
+            </div>
 
+            
             <!-- buttons to toggle between sections-->
             <div class="image-sliders portfolio">
                 <button class="prev portfolio">&lt;</button>
-                <button class="next portfolio">&gt;</button>
-            </div>
-
-            <div class="active-image-indicators portfolio">
                 <!-- small circular section indicators-->
                 <div class="indicator portfolio">
                     <input type="radio" name="dot" id="one">
                     <input type="radio" name="dot" id="two">
                 </div>
+                <button class="next portfolio">&gt;</button>
             </div>
+
+           
         </article>
 
         <article class="portfolio">
             <h3 class="portfolio"> Certifications </h3>
+            <div class="sections portfolio">
+                <section class="portfolio">
+                    <h4 class="portfolio vmware">VMware</h4>
+                    <ul class="portfolio">
+                        <li class="portfolio">VMware Software Defined Storage concept certification</li>
+                        <li class="portfolio">VMware Network virtualization concepts</li>
+                    </ul>
+                </section>
+    
+                <section class="portfolio">
+                    <h4 class="portfolio hackerrank">Hackerrank</h4>
+                    <ul class="portfolio">
+                        <li class="portfolio">Hackerrank basic java concepts certification</li>
+                        <li class="portfolio">Hackerrank basic python certification</li>
+                    </ul>
+                </section>
+    
+                <section class="portfolio cisco">
+                    <h4 class="portfolio">Cisco</h4>
+                    <p class="portfolio">Cisco Networking Essential certification</p>
+                </section>    
 
-            <section class="portfolio">
-                <h4 class="portfolio">VMware</h4>
-                <ul class="portfolio">
-                    <li class="portfolio">VMware Software Defined Storage concept certification</li>
-                    <li class="portfolio">VMware Network virtualization concepts</li>
-                </ul>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Hackerrank</h4>
-                <ul class="portfolio">
-                    <li class="portfolio">Hackerrank basic java concepts certification</li>
-                    <li class="portfolio">Hackerrank basic python certification</li>
-                </ul>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Cisco</h4>
-                <p class="portfolio">Cisco Networking Essential certification</p>
-            </section>
-
+            </div>
+            
             <!-- buttons to toggle between sections-->
             <div class="image-sliders portfolio">
                 <button class="prev portfolio">&lt;</button>
-                <button class="next portfolio">&gt;</button>
-            </div>
-
-            <div class="active-image-indicators portfolio">
                 <!-- small circular section indicators-->
                 <div class="indicator portfolio">
                     <input type="radio" name="dot" id="one">
                     <input type="radio" name="dot" id="two">
                     <input type="radio" name="dot" id="three">
                 </div>
+                <button class="next portfolio">&gt;</button>
+            </div>
+
+            <div class="active-image-indicators portfolio">
+                
             </div>
         </article>
 
         <article class="portfolio">
             <h3 class="portfolio">Experiences</h3>
-            <section class="portfolio">
-                <h4 class="portfolio">bootcamp</h4>
-                <ul class="portfolio">
-                    <li class="portfolio">Freecodecamp's web development bootcamp</li>
-                    <li class="portfolio">Freecodecamp's scientific computing with python</li>
-                </ul>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Course</h4>
-                <ul class="portfolio">
-                    <li class="portfolio">Frontend Masters intense work-ready full-stack web development program.</li>
-                    <li class="portfolio">Frontend Masters Database and basic Linux Introduction course.</li>
-                </ul>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Software Development</h4>
-                <p class="portfolio">Amharic Spell checking software production</p>
-            </section>
-
-            <section class="portfolio">
-                <h4 class="portfolio">Modelling</h4>
-                <p class="portfolio">Charity and commercial Fashion shows.</p>
-            </section>
+            <div class="sections portfolio">
+                <section class="portfolio bootcamp">
+                    <h4 class="portfolio">bootcamp</h4>
+                    <ul class="portfolio">
+                        <li class="portfolio">Freecodecamp's web development bootcamp</li>
+                        <li class="portfolio">Freecodecamp's scientific computing with python</li>
+                    </ul>
+                </section>
+    
+                <section class="portfolio course">
+                    <h4 class="portfolio">Course</h4>
+                    <ul class="portfolio">
+                        <li class="portfolio">Frontend Masters intense work-ready full-stack web development program.</li>
+                        <li class="portfolio">Frontend Masters Database and basic Linux Introduction course.</li>
+                    </ul>
+                </section>
+    
+                <section class="portfolio software">
+                    <h4 class="portfolio">Software Development</h4>
+                    <p class="portfolio">Amharic Spell checking software production</p>
+                </section>
+    
+                <section class="portfolio modeling">
+                    <h4 class="portfolio">Modelling</h4>
+                    <p class="portfolio">Charity and commercial Fashion shows.</p>
+                </section>
+            </div>
+            
 
             <!-- buttons to toggle between sections-->
             <div class="image-sliders portfolio">
                 <button class="prev portfolio">&lt;</button>
-                <button class="next portfolio">&gt;</button>
-            </div>
-
-            <div class="active-image-indicators portfolio">
                 <!-- small circular section indicators-->
                 <div class="indicator portfolio">
                     <input type="radio" name="dot" id="one">
@@ -182,7 +191,9 @@
                     <input type="radio" name="dot" id="three">
                     <input type="radio" name="dot" id="four">
                 </div>
+                <button class="next portfolio">&gt;</button>
             </div>
+
         </article>
 
         <aside class="portfolio">
@@ -193,9 +204,10 @@
             <a href="https://www.hackerrank.com/profile/bisratplus" class="portfolio"> Hackerrank Certificates </a>
             <a href="https://lms.netacad.com/course/view.php?id=1970024" class="portfolio"> Cisco Networking Essential Certificate</a>
 
-            <!-- button leading to the next page -->
-            <a href="Services.html" class="Services portfolio"> Services</a>
+            
         </aside>
+        <!-- button leading to the next page -->
+        <a href="Services.html" class="services portfolio"> Services</a>
     </main>
 
     <footer class="portfolio">
@@ -208,7 +220,7 @@
             <a href="https://lms.netacad.com/course/view.php?id=1970024" class="portfolio"> Cisco Networking Essential Certificate</a>
 
             <!-- button leading to the next page -->
-            <a href="Services.html" class="Services portfolio"> Services</a>
+            <a href="Services.html" class="services portfolio download-btn"> Services</a>
         </aside>  
 
         <address class="social-media-links portfolio">

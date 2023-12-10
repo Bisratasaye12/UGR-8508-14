@@ -12,21 +12,20 @@
 
 <body class="home">
     <header class="home">
-        <nav class="home">
-            <ul class="nav-bar home">
-                <input type="checkbox" id="check" />
-                <span class="menu home">
-                    <label for="check" class="close-menu home">
-                        <i class="fas fa-times home"></i>
-                    </label>
+        <nav class="home nav-bar">
+                <label for="check" class="control-menu home">
+                    <i class="fas fa-times close-menu home"></i>
+                    <i class="fa-solid fa-bars open-menu home"></i>
+                    <input type="checkbox" id="check" />
+                </label>
+                <ul class="menu home">
+                    
                     <li class="home"> <a href="#" class="home"> Home </a> </li>
                     <li class="home"> <a href="About_Me.html" class="home"> About Me </a> </li>
                     <li class="home"> <a href="Portfolio.html" class="home"> Portfolio </a> </li>
                     <li class="home"> <a href="Services.html" class="home"> Services </a> </li>
                     <li class="home"> <a href="Contact.html" class="home"> Contact </a> </li>
-                </span>
-                <label for="check" class="open-menu home"><i class="fa-solid fa-bars home"></i></label>
-            </ul>
+                </ul>
         </nav>
         <i class="logo home">BA</i>
         <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank" class="download-btn home">Download Resume</a>
@@ -43,37 +42,40 @@
                 <li class="two home">Mobile Application Development,</li>
                 <li class="three home">Graphic Designing,</li>
                 <li class="four home">Fashion Modelling, and</li>
-                <li class="five home">More</li>
+                <li class="five home">More.</li>
             </ul>
             <p class="p-two home"> Join me on this journey of turning concepts into digital wonders!</p>
+            <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank" class="download-btn-main home">Download Resume</a>
         </section>
 
         <section class="profile-images home">
-            <figure>
-                <img src="images/normal.jpg" alt="portrait-normal-image" class="home">
-            
-            </figure>
-
-            <figure>
-                <img src="images/modelling_1_sm.jpg" alt="modelling-image-1" class="home">
-            
-            </figure>
-
-            <figure>
-                <img src="images/modelling_2.jpg" alt="modelling-image-2" class="home">
-            </figure>
+            <div class="images">
+                <figure>
+                    <img src="images/normal.jpg" alt="portrait-normal-image" class="home">
+                </figure>
+    
+                <figure>
+                    <img src="images/modelling_1_sm.jpg" alt="modelling-image-1" class="home">
+                </figure>
+    
+                <figure>
+                    <img src="images/modelling_2.jpg" alt="modelling-image-2" class="home">
+                </figure>
+            </div>
+           
             <!-- buttons to toggle between images-->
             <div class="image-sliders home">
                 <button class="prev home"> &lt;</button>
+                <div class="active-image-indicators home">
+                    <!-- small circular image indicators-->
+                    <div class="indicator home"></div>
+                    <div class="indicator home"></div>
+                    <div class="indicator home"></div>
+                </div>
                 <button class="next home"> &gt;</button>
             </div>
 
-            <div class="active-image-indicators home">
-                <!-- small circular image indicators-->
-                <div class="indicator home"></div>
-                <div class="indicator home"></div>
-                <div class="indicator home"></div>
-            </div>
+            
         </section>
 
     </main>

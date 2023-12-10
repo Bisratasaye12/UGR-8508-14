@@ -8,46 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="about-me">
-    <!-- <header class="about-me">
-        <i class="logo about-me">BA</i>
-
-        <label for="check" class="open-menu about-me"> <h3 id="menuToggle" class="about-me">Menu</h3> <i class="fa-solid fa-chevron-down about-me" ></i></label>
-
-         <menu class="menu about-me">
-             <input type="checkbox" id="check">
-             <label for="check" class="close-menu about-me"><i class="fa-solid fa-chevron-up about-me" ></i></label>
-             <li><a href="index.html">Home</a></li>
-             <li><a href="About_Me.html">About me</a></li>
-             <li><a href="Portfolio.html">Portfolio</a></li>
-             <li><a href="Services.html">Services</a></li>
-             <li><a href="Contact.html">Contact</a></li>
-         </menu>
-         
-    </header> -->
-
     <header class="about-me">
-        <i class="logo about-me">BA</i>
-        <nav class="about-me">
-            <ul class="nav-bar about-me">
+        <nav class="about-me nav-bar">
+            <label for="check" class="control-menu about-me">
+                <h2>Menu</h2>
+                <i class="fa-solid fa-chevron-up" class=" close-menu about-me"></i>
+                <i class="fa-solid fa-chevron-down" class=" open-menu about-me"></i>
                 <input type="checkbox" id="check" />
-                <span class="menu about-me">
-                    <label for="check" class="close-menu about-me">
-                        <i class="fas fa-times about-me"></i>
-                    </label>
-                    <li class="about-me"> <a href="#" class="about-me"> Home </a> </li>
-                    <li class="about-me"> <a href="About_Me.html" class="about-me"> About Me </a> </li>
-                    <li class="about-me"> <a href="Portfolio.html" class="about-me"> Portfolio </a> </li>
-                    <li class="about-me"> <a href="Services.html" class="about-me"> Services </a> </li>
-                    <li class="about-me"> <a href="Contact.html" class="about-me"> Contact </a> </li>
-                </span>
-                <label for="check" class="open-menu about-me"> Menu <i class="fa-solid fa-chevron-down about-me"></i></label>
+            </label>
+            <ul class="menu about-me in-header">
+                
+                <li class="about-me"> <a href="index.html" class="about-me"> Home </a> </li>
+                <li class="about-me"> <a href="About_Me.html" class="about-me"> About Me </a> </li>
+                <li class="about-me"> <a href="Portfolio.html" class="about-me"> Portfolio </a> </li>
+                <li class="about-me"> <a href="Services.html" class="about-me"> Services </a> </li>
+                <li class="about-me"> <a href="Contact.html" class="about-me"> Contact </a> </li>
             </ul>
         </nav>
-        
-        </header>
+        <i class="logo about-me">BA</i>
+    </header>
 
 
     <main class="about-me">
+        
         <h1 class="about-me"> ABOUT ME</h1>
 
         <!-- profile image -->
@@ -55,9 +38,10 @@
 
 
         <!-- key personal information fields -->
-        <h2 class="about-me">Personal Information</h2>
+        
             
         <dl class="about-me">
+            <h2 class="about-me main-h2">Personal Information</h2>
             <div class="item about-me">
                 <dt class="about-me">First Name:</dt>
                 <dd class="about-me">Bisrat</dd>
@@ -132,22 +116,38 @@
             </div>
         </dl>
         
-        <h2 class="about-me">Achievements</h2>
-        <p class="about-me">In the past few months I have two groundbreaking achievements. One is working on a Natural Language Processing-based Amharic Spell Checker that will soon be deployed. The other one is joining <abbr title="Africa to Silicon Valley">A2SV</abbr>, which is a great place to acquire skills to ace in my career. </p>
-        <h2 class="about-me">Interests and Hobbies</h2>
-        <ul class="about-me">
-            <li>Watching Movies</li>
-            <li>Reading books in Sci-fi, History, Fantasy, and Fiction genres</li>
-            <li>Competitive Programming</li>
-        </ul>
-        <h2 class="about-me">Favorite quote </h2>
-        <blockquote cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
-        </blockquote>
-        <cite class="about-me">~Albert Einstein~</cite>
-        <h2 class="about-me">Places I've visited</h2>
-        <p class="about-me">I've got the chance to visit China, Tianjin state in 2018. Explore a glimpse of the visit through the following video. </p>
+        <div class="achievements">
+            <h2 class="about-me main-h2">Achievements</h2>
+            <p class="about-me">In the past few months I have two groundbreaking achievements.<br> One is working on a Natural Language Processing-based Amharic Spell Checker that will soon be deployed. The other one is joining <abbr title="Africa to Silicon Valley">A2SV</abbr>, which is a great place to acquire skills to ace in my career. </p>
+        </div>
+
+        <div class="interests">
+            <h2 class="about-me main-h2">Interests and Hobbies</h2>
+            <ul class="about-me">
+                <li>Watching Movies</li>
+                <li>Reading books in Sci-fi, History, Fantasy, and Fiction genres</li>
+                <li>Competitive Programming</li>
+            </ul>
+        </div>
+
+        <div class="fav-quote">
+            
+            <h2 class="about-me main-h2">Favorite quote </h2>
+            <blockquote cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
+            </blockquote>
+            <cite class="about-me">~Albert Einstein~</cite>
+        </div>
         
-        <!-- an aside that will be visible only in desktop view -->
+        <div class="places">
+            <h2 class="about-me main-h2">Places I've visited</h2>
+            <p class="about-me">I've got the chance to visit China, Tianjin state in 2018. Explore a glimpse of the visit through the following video. </p>
+            <div class="videos about-me">
+                <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk" allowfullscreen=""></iframe>
+                <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU" allowfullscreen=""></iframe>
+            </div>
+            <!-- an aside that will be visible only in desktop view -->
+        </div>
+        
         <aside class="about-me">
             <h3 class="about-me">Quick Navigations</h3>
             <ul class="about-me">
@@ -161,31 +161,10 @@
             <!-- Separate button to lead to the next page -->
         <a href="Portfolio.html" class="about-me"> Portfolio </a>
         </aside>
-        <div class="videos about-me">
-            <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk" allowfullscreen=""></iframe>
-            <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU" allowfullscreen=""></iframe>
-        </div>
-
-
     </main>
 
     
     <footer id="footer" class="about-me">
-        <!-- an aside visible only in mobile view -->
-        <aside class="about-me">
-            <h3 class="about-me">Quick Navigations</h3>
-            <ul class="about-me">
-                        
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-                
-            </ul>
-
-            <!-- Separate button to lead to the next page -->
-        <a href="Portfolio.html" class="Portfolio-btn about-me"> Portfolio </a>
-        </aside>
-
         <address class="social-media-links about-me">
             <a href="https://t.me/Bisratasaye12" class="about-me"><i class="fa-brands fa-telegram"></i></a>
             <a href="https://www.instagram.com/modelbisratasaye/" class="about-me"> <i class="fa-brands fa-instagram"></i> </a>
