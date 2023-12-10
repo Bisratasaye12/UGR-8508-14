@@ -1,4 +1,4 @@
-/* Flex styles */
+/* Responsive Flex styles */
 
 
 * {
@@ -841,6 +841,8 @@
 .about-me main dl li{
     list-style-type: none;
     margin: 3px;
+    font-family: var(--font-family);
+    font-size: 1rem;
 }
 
 .about-me img{
@@ -866,6 +868,7 @@
 
 .about-me dt, .about-me dd{
     margin: 5px;
+    text-align: left;
 }
 .about-me .main-h2{
     margin: 1rem;
@@ -2072,7 +2075,7 @@
         font-size: 2rem;
     }
     .portfolio p, ul, li, a{
-        font-size: 1.6rem;
+        font-size: 1rem;
         font-weight: 500;
     }
     
