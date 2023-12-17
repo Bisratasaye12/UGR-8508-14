@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <i class="logo">BA</i>
+    <header class="hero is-primary">
+        <nav class="navbar is-flex is-flex-direction-column is-align-items-center pt-3">
+            <i class="logo nav-brand">BA</i>
 
-        <!-- A menu that will be visible in the header for mobile and tablet view but visible in the aside for the desktop view-->
-        <h3>Menu</h3>
-        <menu class="nav-list">
-           
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-
-        </menu>
-        <!-- icon for the drop down menu -->
-        <i class="fa-solid fa-chevron-down"></i>
+            <!-- A menu that will be visible in the header for mobile and tablet view but visible in the aside for the desktop view-->
+            
+            <menu class="navbar-menu" id="nav-links">
+                <ul class="navbar-end">
+                    <li class="navbar-item"> <a href="index.html"> Home </a> </li>
+                    <li class="navbar-item"> <a href="About_Me.html"> About Me </a> </li>
+                    <li class="navbar-item"> <a href="Portfolio.html"> Portfolio </a> </li>
+                    <li class="navbar-item"> <a href="Services.html"> Services </a> </li>
+                    <li class="navbar-item"> <a href="Contact.html"> Contact </a> </li>
+                </ul>
+            </menu>
+            <!-- icon for the drop down menu -->
+            <a href=""      
+            role="button"
+            class="navbar-burger is-flex ml-1 is-size-"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="nav-links">
+            <h3 >Menu</h3>
+            <i class="fa-solid fa-chevron-down navbar-burger p-2 has-text-white mr-2" ></i>
+            </a>
+            
+        </nav>
+        
     </header>
 
     <main>
@@ -106,9 +120,10 @@
         <cite>~Albert Einstein~</cite>
         <h2>Places I've visited</h2>
         <p>I've got the chance to visit China, Tianjin state in 2018.Explore a glimpse of the visit through the following video. </p>
-        <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk"  allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU"  allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk"  allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU"  allowfullscreen></iframe> -->
 
+        <script src="JS/index.js"></script>
 
     </main>
 

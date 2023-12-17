@@ -7,43 +7,86 @@
     <!-- icon store -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <i class="fa-solid fa-bars navigation-hamburger-menu"></i>
-        <i class="logo">BA</i>
-        <nav>
-            <ul>
-                <li> <a href="#"> Home </a> </li>
-                <li> <a href="About_Me.html"> About Me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-            </ul>
+    <header class="hero is-flex is-justify-content-center is-primary p-5 is-multiline">        
+        <nav class="nabvbar is-flex is-flex-direction-row is-justify-content-space-between is-flex-direction-row-reverse-desktop">
+
+            <a
+            role="button"
+            class="navbar-burger box ml-2"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="nav-links"
+            >
+
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+
+            </a>
+
+            <div class="nav-brand is-order-0-desktop">
+                <i class="navbar-item is-brand">BA</i>
+            </div>
+
+            <div class="navbar-item is-order-3-desktop">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button box is-light" href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="resume.pdf">
+                            <span class="icon">
+                                <i class="fas fa-download"></i>
+                            </span>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav-links" class="navbar-menu is-order-2-desktop">
+                <ul class="navbar-end">
+                    <li class="navbar-item"> <a href="index.html"> Home </a> </li>
+                    <li class="navbar-item"> <a href="About_Me.html"> About Me </a> </li>
+                    <li class="navbar-item"> <a href="Portfolio.html"> Portfolio </a> </li>
+                    <li class="navbar-item"> <a href="Services.html"> Services </a> </li>
+                    <li class="navbar-item"> <a href="Contact.html"> Contact </a> </li>
+                </ul>
+
+            </div>
+
         </nav>
-        <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank">Download Resume</a>
+        
                 
     </header>
 
-    <main>
+    <main class="is-flex is-flex-direction-column ">
         <!-- Introduction -->
-        <section class="hero">
-            <h1 class="welcome">Hello, I'm Bisrat Asaye</h1>
-            <p>A 3rd-year software engineering student at Addis Ababa Institute of Technology.</p>
-            <h2>Currently Engaged in </h2>
-            <span class="one">web development,</span>
-            <span class="two"> mobile applications,</span>
-            <span class="three">Graphic Designer,</span>
-            <span class="four">Fashion Model</span>
-            <span class="five">and more</span>
-            <p> Join me on this journey of turning concepts into digital wonders!</p>
+        <section class="hero-body is-half-height">
+            <h1 class="title">Hello, I'm Bisrat Asaye</h1>
+            <p class="subtitle">A 3rd-year software engineering student at Addis Ababa Institute of Technology.</p>
+            <h2 class="subtitle animate__animated animate__fadeIn">Currently Engaged in </h2>
+            <span class="animate__animated animate__fadeIn">web development,</span>
+            <span class="animate__animated animate__fadeIn"> mobile applications,</span>
+            <span class="animate__animated animate__fadeIn">Graphic Designer,</span>
+            <span class="animate__animated animate__fadeIn">Fashion Model</span>
+            <span class="animate__animated animate__fadeIn">and more. </span>
+            <p> <br> Join me on this journey of turning concepts into digital wonders!</p>
         </section>
 
-        <section class="profile-images">
-            <img src="images/normal.jpg" alt="portrait-normal-image" >
-            <img src="images/modelling_1_sm.jpg" alt="modelling-image-1">
-            <img src="images/modelling_2.jpg" alt="modelling-image-2">
+        <section class="section profile-images is-flex image columns is-tablet">
+            <figure class="column is-2-tablet">
+                <img src="images/normal.jpg" alt="portrait-normal-image" >
+            </figure>
+
+            <figure class="column is-2-tablet" >
+                <img src="images/modelling_1_sm.jpg" alt="modelling-image-1">
+            </figure>
+
+            <figure class="column is-2-tablet">
+                <img src="images/modelling_2.jpg" alt="modelling-image-2">
+            </figure>
             
             <!-- buttons to toggle between images-->
             <div class="image-sliders">
@@ -52,7 +95,7 @@
             </div>
 
             <div class="active-image-indicators">
-                <!-- small circular image indicators-->
+                
                 <div class="indicator"></div>
                 <div class="indicator"></div>
                 <div class="indicator"></div>
@@ -61,16 +104,18 @@
 
     </main>
 
-    <footer>
-        <address class="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
+    <footer class="has-background-warning is-flex is-flex-direction-column is-align-items-center">
+        <address class="social-media-links is-flex is-justify-content-center p-5 ">
+            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram mr-3 is-size-2"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram mr-3 is-size-2"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin mr-3 is-size-2"></i> </a>
+            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github is-size-2"></i> </a>     
 
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="p-3 "> ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
+    <script src="JS/index.js"></script>
+    <script src="JS/javascript.js" ></script>
 </body>
 
 </html>

@@ -4,71 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <i class="logo">BA</i>
-        <i class="fa-solid fa-bars navigation-hamburger-menu"></i>
+    <header class="hero is-flex is-justify-content-center is-primary p-5 is-multiline">        
+        <nav class="nabvbar is-flex is-flex-direction-row is-justify-content-space-between is-flex-direction-row-reverse-desktop">
+            
+            <div class="nav-brand is-order-0-desktop">
+                <i class="navbar-item is-brand">BA</i>
+            </div>
 
-        <!-- A navigation list visible only in desktop view -->
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About Me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-            </ul>
+            <a
+            role="button"
+            class="navbar-burger box ml-2"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="nav-links"
+            >
+
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+
+            </a>
+
+
+            <div id="nav-links" class="navbar-menu is-order-2-desktop">
+                <ul class="navbar-end">
+                    <li class="navbar-item"> <a href="index.html"> Home </a> </li>
+                    <li class="navbar-item"> <a href="About_Me.html"> About Me </a> </li>
+                    <li class="navbar-item"> <a href="Portfolio.html"> Portfolio </a> </li>
+                    <li class="navbar-item"> <a href="Services.html"> Services </a> </li>
+                    <li class="navbar-item"> <a href="Contact.html"> Contact </a> </li>
+                </ul>
+
+            </div>
+
         </nav>
+        
+                
     </header>
 
     <main>
-        <h1>CONTACT</h1>
-        <p>I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
+        <div class="body columns rows is-multiline p-5">
+            <div class="hero-body column is-6">
+                <h1 class="title has-text-centered">CONTACT</h1>
+                <p class="subtitle">I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
+    
+            </div>
 
-
-        <form action="process_form" method="post">
+            <aside class="is-hidden-mobile column is-6">
+                <h2 class="title is-size-4">Direct Contact</h2>
+                <ul>
+                    <li>Tel: +251973056501</li>
+                    <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
+                </ul>
+                <h2 class="title is-size-4">Address</h2>
+                <address>
+                    <ul>
+                        <li>Addis Ababa, Ethiopia</li>
+                        <li>P.O.Box 12345</li>
+                    </ul>
+                    
+                </address>
+            </aside>
+          
+    
+            <form class="form feild is-grouped column is-6 row is-2" action="process_form" method="post">
+                
+                <input class="input" type="email"  name="email" placeholder="email">
             
-            <input type="email"  name="email" placeholder="email">
-        
+                
+                <input class="input" type="text" name="name" placeholder="your name" required>
             
-            <input type="text" name="name" placeholder="your name" required>
-        
+                
+                <textarea class="textarea" id="message" name="message" placeholder="message" rows="5" required></textarea>
             
-            <textarea id="message" name="message" placeholder="message" rows="5" required></textarea>
-        
-            <input type="submit" value="Submit">
-        </form>
-        
+                <input class="button is-success" type="submit" value="Submit">
+            </form>
+    
+            
+        </div>
+       
+    
+        <script src="JS/index.js"></script>
     </main>
 
-    <aside>
-        <h2>Direct Contact</h2>
-        <ul>
-            <li>Tel: +251973056501</li>
-            <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
+    
+    <footer class="has-background-warning is-flex is-flex-direction-column is-align-items-center">
+        <aside class="column box is-2 m-6 is-hidden-desktop ">
+            <h2 class="title is-size-4">Direct Contact</h2>
             <ul>
-                <li>Addis Ababa, Ethiopia</li>
-                <li>P.O.Box 12345</li>
+                <li>Tel: +251973056501</li>
+                <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
             </ul>
-            
-        </address>
-    </aside>
+            <h2 class="title is-size-4">Address</h2>
+            <address>
+                <ul>
+                    <li>Addis Ababa, Ethiopia</li>
+                    <li>P.O.Box 12345</li>
+                </ul>
+                
+            </address>
+        </aside>
+        <address class="social-media-links is-flex is-justify-content-center p-5 ">
+            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram mr-3 is-size-2 "></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram mr-3 is-size-2"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin mr-3 is-size-2"></i> </a>
+            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github is-size-2"></i> </a>     
 
-    <footer>
-        <address id="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
-
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="p-3 "> ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
+
 
 </body>
 </html>
