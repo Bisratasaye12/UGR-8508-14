@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <script src="Js/javascript.js"></script>
+
+</head>
+<body class="contact">
+    <header class="contact">
+        <nav class="contactnav-bar">
+                <label for="check" class="control-menu contact">
+                    <i class="fas fa-times close-menu contact"></i>
+                    <i class="fa-solid fa-bars open-menu contact"></i>
+                    <input type="checkbox" id="check" />
+                </label>
+                <ul class="menu contact">
+                    
+                    <li class="contact"> <a href="index.html" class="contact"> Home </a> </li>
+                    <li class="contact"> <a href="About_Me.html" class="contact"> About Me </a> </li>
+                    <li class="contact"> <a href="Portfolio.html" class="contact"> Portfolio </a> </li>
+                    <li class="contact"> <a href="Services.html" class="contact"> Services </a> </li>
+                    <li class="contact"> <a href="Contact.html" class="contact"> Contact </a> </li>
+                </ul>
+        </nav>
+        <i class="logo contact">BA</i>
+    </header>
+
+    <main class="contact">
+        <h1 class="contact">CONTACT</h1>
+        <p class="contact">I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links" class="contact"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
+
+        <form   action="https://formsubmit.co/bisratplus@gmail.com"
+                method="POST"
+                class="contact"
+                id="commentForm">
+
+            <input type="email" id="email" name="email" placeholder="email" class="email contact">
+            <input type="text" id="name" name="name" placeholder="name" required class="name contact">
+            <textarea id="message" name="message" placeholder="message" rows="5" required class="message contact"></textarea>
+            <input onclick="sendMail()" type="submit" value="Submit" class="submit contact">
+        </form>
+
+        <aside class="contact">
+            <h2 class="contact">Direct Contact</h2>
+            <ul class="contact">
+                <li>Tel: +251973056501</li>
+                <li>Email: <a href="mailto:bisratplus@gmail.com" class="contact"> bisratplus@gmail.com</a></li>
+            </ul>
+            <h2 class="contact">Address</h2>
+            <address class="contact">
+                <ul class="contact">
+                    <li>Addis Ababa, Ethiopia</li>
+                    <li>P.O.Box 12345</li>
+                </ul> 
+            </address>
+        </aside>
+    </main>
+
+    <footer class="contact">
+        <aside class="contact">
+            <h2 class="contact">Direct Contact</h2>
+            <ul class="contact">
+                <li>Tel: <a href="tel: +251973056501">+251973056501</a></li>
+                <li>Email:<a href="mailto:bisratplus@gmail.com" class="contact"> bisratplus@gmail.com</a></li>
+            </ul>
+            <h2 class="contact">Address</h2>
+            <address class="contact">
+                <ul class="contact">
+                    <li>Addis Ababa, Ethiopia</li>
+                    <li>P.O.Box 12345</li>
+                </ul>
+            </address>
+        </aside>
+    
+        <address id="social-media-links" class="social-media-links" class="contact">
+            <a href="https://t.me/Bisratasaye12" class="contact"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/" class="contact"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/" class="contact"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://github.com/Bisratasaye12" class="contact"> <i class="fa-brands fa-github"></i> </a>     
+        </address>
+        <p class="copyright contact"> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("VbEhGK32tRH1Las4B");
+      })();
+    </script>
+
+</body>
+</html>
