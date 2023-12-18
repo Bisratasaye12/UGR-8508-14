@@ -27,23 +27,40 @@
             <!-- icon for the drop down menu -->
             <a href=""      
             role="button"
-            class="navbar-burger is-flex ml-1 is-size-"
+            class="navbar-burger is-flex ml-1 is-size-5 is-hidden-desktop"
             aria-label="menu"
             aria-expanded="false"
             data-target="nav-links">
             <h3 >Menu</h3>
             <i class="fa-solid fa-chevron-down navbar-burger p-2 has-text-white mr-2" ></i>
             </a>
-            
         </nav>
         
     </header>
+    <div class="columns">
+    <div class="column has-background-danger is-2 is-fullheight is-hidden-mobile my-3">
+        <aside>
+            <h3 class="title is-size-6">Quick Navigations</h3>
+            <ul>   
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="Services.html"> Services </a> </li>
+                <li> <a href="Contact.html"> Contact </a> </li>
+            </ul>
+            <!-- Separate button to lead to the next page -->
+           <a href="Portfolio.html"> Portfolio </a>
+        </aside>
+    </div>
 
-    <main>
-        <h1 class="is-title"> ABOUT ME</h1>
+
+
+    <main class="column">
+        <h1 class="is-title is-1 has-text-centered"> ABOUT ME</h1>
 
         <!-- profile image -->
-        <div class="">
+       
+       <div class="columns is-tablet is-centered has-v-centered">
+       
+        <div class="column">
             <figure class="image is-128x128  ">
                 <img src="images/normal.jpg" alt="profile-image" class="is-rounded is-centered mx-6 my-6">
             </figure>
@@ -51,7 +68,7 @@
         
 
         <!-- key personal information feilds -->
-    <div class="has-background-warning my-6 mx-1">
+    <div class="has-background-warning my-6 mx-1 column">
         <h2 class="title has-text-centered">Personal Information</h2>
             
         <dl>
@@ -132,30 +149,36 @@
             
         </dl>
     </div>
-        <div class="container mx-3 my-2 ">
+    </div>
+
+        <div class="columns">
+        <div class="container mx-3 my-2  column">
             <h2 class="title is-size-4 has-text-centered">Achievements</h2>
             <p class="mx-2">In the past few months I have two groundbreaking achievements. One is working on an Natural Language Processing based Amharic Spell Checker
             that will soon be deployed. The other one is joining <abbr title="Africa to Silicon Valley">A2SV</abbr> which is a great place to aqcuire skills to ace in my career. </p>
        
         </div>
         
-            <div class="container mx-3 my-2">
-                <h2 class="title is-size-4 has-text-centered">Interests and Hobbies</h2>
+        <div class="container mx-3 my-2 column">
+            <h2 class="title is-size-4 has-text-centered">Interests and Hobbies</h2>
             <ul class="mx-2">
                 <li>Watching Movies</li>
                 <li>Reading books in Sci-fi, History, Fantasy and Fiction genres</li>
                 <li>Competitive Programming</li>
             </ul>
 
-            </div>
-        <div class="container mx-3 my-2">  
+        </div>
+     </div>
+        
+        <div class="columns is-tablet">
+        <div class="container mx-3 my-2 column">  
         <h2 class="title has-text-centered">Favorite qoute </h2>
         <blockquote class="mx-2" cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
         </blockquote>
         <cite class="is-italic has-text-centered">~Albert Einstein~</cite>
         </div>
         
-        <div class="container mx-3 my-2">
+        <div class="container mx-3 my-2 column">
             <h2 class="title is-size-4">Places I've visited</h2>
             <p class="mx-2">I've got the chance to visit China, Tianjin state in 2018.Explore a glimpse of the visit through the following video. </p>
             <div class="conlumns">
@@ -165,28 +188,16 @@
             
 
         </div>
+    </div>
         
         <script src="JS/index.js"></script>
 
     </main>
 
     <!-- an aside that will be visible only in a desktop view -->
-    <div class="columns is-hidden-mobile">
-        <aside>
-            <h3>Quick Navigations</h3>
-            <ul>
-                        
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-                
-            </ul>
     
-            <!-- Separate button to lead to the next page -->
-           <a href="Portfolio.html"> Portfolio </a>
-        </aside>
-    </div>
     
+</div>
 
     <footer id="footer" class="has-background-warning is-mobile">
         <address class="social-media-links columns is-centered is-size-3 is-mobile">
