@@ -48,14 +48,14 @@
     </header>
 
     <main>
-        <div class="body columns rows is-multiline p-5">
+        <div class="body columns rows is-multiline p-5 ">
             <div class="hero-body column is-6">
                 <h1 class="title has-text-centered">CONTACT</h1>
                 <p class="subtitle">I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
     
             </div>
 
-            <aside class="is-hidden-mobile column is-6">
+            <aside class="is-hidden-mobile column is-6  mt-6-tablet box">
                 <h2 class="title is-size-4">Direct Contact</h2>
                 <ul>
                     <li>Tel: +251973056501</li>
@@ -72,15 +72,15 @@
             </aside>
           
     
-            <form class="form feild is-grouped column is-6 row is-2" action="process_form" method="post">
-                
-                <input class="input" type="email"  name="email" placeholder="email">
+            <form class="feild column is-5-tablet ml-5 ml-5-desktop" action="process_form" method="post">
+                <label for="email" class="label"> Email </label>
+                <input class="input is-success is-rounded mb-2" type="email"  name="email" placeholder="email">
             
-                
-                <input class="input" type="text" name="name" placeholder="your name" required>
+                <label for="name" class="label"> Name </label>
+                <input class="input is-success is-rounded mb-2" type="text" name="name" placeholder="your name" required>
             
-                
-                <textarea class="textarea" id="message" name="message" placeholder="message" rows="5" required></textarea>
+                <label for="message" class="label"> Message </label>
+                <textarea class="textarea is-success is-rounded mb-2" id="message" name="message" placeholder="message" rows="5" required></textarea>
             
                 <input class="button is-success" type="submit" value="Submit">
             </form>
