@@ -3,72 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact</title>
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
-</head>
+</heaad>
 <body>
-    <header>
-        <i class="logo">BA</i>
-        <i class="fa-solid fa-bars navigation-hamburger-menu"></i>
-
-        <!-- A navigation list visible only in desktop view -->
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About Me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
+    <header class="flex justify-between items-center h-20 sm:h-52 p-5 bg-red-200 pt-28 pb-10 sm:pb-20 sm:px-20">
+        <div class="bg-black rounded-full sm:h-20 sm:w-20 h-14 w-14  mb-20 sm:mb-0 flex items-center justify-center pr-2 "> <span class="text-white text-xl font-regular w-1/3 h-1/3 mb-3">BA</span> </div>
+        <nav class="flex justify-start pl-4 text-white sm:block mb-20 sm:static absolute bg-red-200 top-32  right-0 hidden w-40 sm:w-auto h-full sm:pt-20" id="nav-menu">
+            <ul class="flex flex-col sm:flex-row py-4">
+                <li class="px-2 rounded-md py-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"> <a class="lg:text-2xl  md:text-xl" href="index.html">Home</a></li>
+                <li class="px-2 rounded-md py-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"> <a class="lg:text-2xl  md:text-xl" href="About_Me.html">About Me</a></li>
+                <li class="px-2 rounded-md py-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"> <a class="lg:text-2xl  md:text-xl" href="Portfolio.html">Portfolio</a></li>
+                <li class="px-2 rounded-md py-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"> <a class="lg:text-2xl  md:text-xl" href="Services.html">Service</a></li>
+                <li class="px-2 rounded-md py-2 rounded-sm sm:ml-4 mb-4 md:ml-7 transition duration-300 hover:bg-gray-700 hover:text-white"> <a class="lg:text-2xl  md:text-xl" href="Contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="block  mb-32 sm:hidden flex flex-col items-center justify-center" id="toggler">
+            <div class="bg-white sm:h-1.5  h-1 sm:w-14 w-8 mt-2 rounded-full"></div>
+            <div class="bg-white sm:h-1.5  h-1 sm:w-14 w-8 mt-2 rounded-full"></div>
+            <div class="bg-white sm:h-1.5  h-1 sm:w-14 w-8 mt-2 rounded-full"></div>
+        </div>
+        <div class="block mb-32 hidden" id="cancel"> <i class="fa-solid fa-x text-white text-3xl"></i> </div>
     </header>
 
-    <main>
-        <h1>CONTACT</h1>
-        <p>I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
+        <h1 class="text-3xl text-center font-mono">CONTACT</h1>
+        <p class="text-xl text-center text-mono">I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links" class="underline "> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
 
+        <div class="md:grid grid-cols-2 mt-12">
+            <div class="md:grid-cols-1">
+                <main class="">
+             
+                        <form action="" method="POST" id="commentForm" class="m-7 p-5 text-center">
+                            <div class="mb-4"> 
+                                <input type="text" id="name" name="name" class="w-64 p-2 rounded-md bg-rose-100" placeholder="Your Full Name" required>
+                            </div> 
+                            <div class="mb-4">
+                               <input type="email" id="email" name="email" class="w-64 p-2 rounded-md bg-rose-100" placeholder="Email" required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea id="message" name="message" rows="4" class="w-64 p-2 rounded-md bg-rose-100" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-rose-900 text-white py-2 px-4 rounded-md button">Submit Comment</button>
+                        </form>            
+                </main>
+    
+            </div>
+            <div class="hidden md:block md:grid-cols-1 ">
+                <aside class="bg-rose-950 rounded-lg m-3 text-center text-white   w-80 h-1/2 mt-12 ">
+                    <h2 class="m-5">Direct Contact</h2>
+                    <ul class="m-5">
+                        <li>Tel: +251973056501</li>
+                        <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
+                    </ul>
+                    <h2>Address</h2>
+                    <address>
+                        <ul>
+                            <li>Addis Ababa, Ethiopia</li>
+                            <li>P.O.Box 12345</li>
+                        </ul>    
+                    </address>
+                </aside>
+            </div>
+        </div>
 
-        <form action="process_form" method="post">
-            
-            <input type="email"  name="email" placeholder="email">
-        
-            
-            <input type="text" name="name" placeholder="your name" required>
-        
-            
-            <textarea id="message" name="message" placeholder="message" rows="5" required></textarea>
-        
-            <input type="submit" value="Submit">
-        </form>
-        
-    </main>
+    <footer  class="bg-rose-950 flex-column text-center  md:fixed bottom-0 w-full ">
+        <div class="text-rose-950 m-5 rounded md:hidden bg-rose-300 p-5 my-5  ">
+            <h2 >Direct Contact</h2>
+                    <ul >
+                        <li>Tel: +251973056501</li>
+                        <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
+                    </ul>
+                    <h2>Address</h2>
+                    <address>
+                        <ul>
+                            <li>Addis Ababa, Ethiopia</li>
+                            <li>P.O.Box 12345</li>
+                        </ul>    
+                    </address>
+        </div>
 
-    <aside>
-        <h2>Direct Contact</h2>
-        <ul>
-            <li>Tel: +251973056501</li>
-            <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li>Addis Ababa, Ethiopia</li>
-                <li>P.O.Box 12345</li>
-            </ul>
-            
+        <address class="social-media-links text-rose-200 text-3xl flex justify-center">
+            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram ml-3 "></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram ml-3 "></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin ml-3"></i> </a>
+            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github ml-3 "></i> </a>     
+
         </address>
-    </aside>
-
-    <footer>
-        <address id="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
-
-        </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="text-rose-200"> ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
+    <script src="JS/index.js"></script>
 
 </body>
 </html>

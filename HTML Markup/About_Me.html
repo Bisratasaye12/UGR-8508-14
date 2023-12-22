@@ -4,52 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <i class="logo">BA</i>
+<body class="font-mono text-xl ">
+    <header class="bg-rose-200 flex w-full h-40 sm:flex-column sm:text-center sm:items-center">
+        
+        <div class="brand rounded-full bg-rose-950 w-20 h-20 m-5 text-rose-200 text-2xl text-center p-4">
+            <i class="logo">BA</i>
+        </div>
 
         <!-- A menu that will be visible in the header for mobile and tablet view but visible in the aside for the desktop view-->
-        <h3>Menu</h3>
-        <menu class="nav-list">
+        <div class="control flex justify-between lg:hidden mt-auto w-1/2">
+            <h3 class="text-xl mr-auto">Menu</h3>
+            <i class="fa-solid fa-chevron-down ml-auto"></i>
+        </div>
+        
+        <nav class="flex justify-start pr-5 items-center ml-auto">
+            <menu class="nav-list hidden lg:flex ">
            
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
+                <li> <a href="index.html" class="ml-3 bg-rose-950 text-red-200 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> Home </a> </li>
+                <li> <a href="About_Me.html"class="ml-3 bg-rose-950 text-red-200 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> About me </a> </li>
+                <li> <a href="Portfolio.html"class="ml-3  text-rose-200 bg-rose-950 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> Portfolio </a> </li>
+                <li> <a href="Services.html"class="ml-3 text-rose-200 bg-rose-950 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> Services </a> </li>
+                <li> <a href="Contact.html"class="ml-3 text-rose-200 bg-rose-950 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> Contact </a> </li>
 
-        </menu>
-        <!-- icon for the drop down menu -->
-        <i class="fa-solid fa-chevron-down"></i>
+            </menu>
+
+        </nav>
+       
+
     </header>
 
-    <main>
-        <h1> ABOUT ME</h1>
+    <main class="p-15 bg-rose-200">
+        <h1 class="text-4xl text-center m-3 font-bold "> ABOUT ME</h1>
 
         <!-- profile image -->
-        <img src="images/normal.jpg" alt="profile-image">
+        <div class="image w-1/2 h-1/4 m-auto pt-10 ">
+            <img src="images/normal.jpg" alt="profile-image" class="rounded-full">
+        </div>
+        
 
 
         <!-- key personal information feilds -->
-        <h2>Personal Information</h2>
+        <h2 class="text-center pt-10 mt-6 text-3xl sm:text-sm font-bold ">Personal Information</h2>
             
-        <dl>
+        <dl class="grid grid-cols-2 sm:grid sm:grid-cols-2 sm:gap-x-2  ">
            
-            <dt>First Name</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">First Name</dt>
             <dd>Bisrat</dd>
             
-            <dt>Last Name</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Last Name</dt>
             <dd>Asaye</dd>
             
-            <dt>Age</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2  ">Age</dt>
             <dd>21</dd>
             
-            <dt>Nationality</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Nationality</dt>
             <dd>Ethiopian</dd>
             
-            <dt>Languages Spoken</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Languages Spoken</dt>
             <dd>
                 <ul>
                     <li>Amharic</li>
@@ -59,10 +73,10 @@
                 </ul>
             </dd>
             
-            <dt>Education</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Education</dt>
             <dd>Currenly attending a BSc of Software Engineering at Addis Ababa Institute of Technology</dd>
             
-            <dt>Professional Experience</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Professional Experience</dt>
             <dd>
                 <ul>
                     <li>Fashion Modelling</li>
@@ -74,7 +88,7 @@
                 </ul>
             </dd>
             
-            <dt>Current Status</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Current Status</dt>
             <dd>
                 Open for work on:
                 <ul>
@@ -84,58 +98,87 @@
                 </ul>
             </dd>
             
-            <dt>Address</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Address</dt>
             <dd>Addis Ababa, Ethiopia</dd>
 
-            <dt>Social Media Presence</dt>
+            <dt class="ml-auto p-2 font-bold w-1/2 ">Social Media Presence</dt>
             <dd><a href="#footer">Here</a></dd>
         </dl>
-        
-        <h2>Achievements</h2>
-        <p>In the past few months I have two groundbreaking achievements. One is working on an Natural Language Processing based Amharic Spell Checker
+         <div class="achievements">
+            <h2 class="text-center text-3xl my-6 ">Achievements</h2>
+            <p class="p-15 mx-10 ">In the past few months I have two groundbreaking achievements. One is working on an Natural Language Processing based Amharic Spell Checker
             that will soon be deployed. The other one is joining <abbr title="Africa to Silicon Valley">A2SV</abbr> which is a great place to aqcuire skills to ace in my career. </p>
-        <h2>Interests and Hobbies</h2>
-        <ul>
-            <li>Watching Movies</li>
-            <li>Reading books in Sci-fi, History, Fantasy and Fiction genres</li>
-            <li>Competitive Programming</li>
-        </ul>
-        <h2>Favorite qoute </h2>
-        <blockquote cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
-        </blockquote>
-        <cite>~Albert Einstein~</cite>
-        <h2>Places I've visited</h2>
-        <p>I've got the chance to visit China, Tianjin state in 2018.Explore a glimpse of the visit through the following video. </p>
-        <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk"  allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU"  allowfullscreen></iframe>
+        
+         </div>
+
+         <div class="interests">
+            <h2 class="text-center text-3xl my-6">Interests and Hobbies</h2>
+            <ul class="p-15 mx-10 ">
+                <li>Watching Movies</li>
+                <li>Reading books in Sci-fi, History, Fantasy and Fiction genres</li>
+                <li>Competitive Programming</li>
+            </ul>
+         </div>
+         
+         <div class="fav">
+            <h2 class="text-center text-3xl my-6">Favorite qoute </h2>
+            <blockquote class="p-15 mx-10 " cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
+            </blockquote>
+            <cite class="p-15 mx-10">~Albert Einstein~</cite>
+         </div>
+
+         <div class="places mb-6">
+            <h2 class="text-center text-3xl mb-6">Places I've visited</h2>
+            <p class="p-15 mx-10">I've got the chance to visit China, Tianjin state in 2018.Explore a glimpse of the visit through the following video. </p>
+        
+         </div>
+        
+         <div class="videos flex p-25 justify-center ">
+            <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk"  allowfullscreen class="w-1/3 m-4 rounded-lg shadow-xl  " ></iframe>
+            <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU"  allowfullscreen class="w-1/3 m-4  rounded-lg shadow-xl  "></iframe>
 
 
+         </div>
     </main>
 
     <!-- an aside that will be visible only in a desktop view -->
-    <aside>
-        <h3>Quick Navigations</h3>
-        <ul>
+    <aside class=" lg:flex text-center bg-rose-100 p-4 rounded-md shadow-xl w-60 m-4  sm:hidden ">
+        <h3 class="text-2xl font-bold ">Quick Navigations</h3>
+        <ul class="text-center m-3 ">
                     
-            <li> <a href="index.html"> Home </a> </li>
-            <li> <a href="Services.html"> Services </a> </li>
-            <li> <a href="Contact.html"> Contact </a> </li>
+            <li class="m-2 "> <a href="index.html"> Home </a> </li>
+            <li class="m-2 "> <a href="Services.html"> Services </a> </li>
+            <li class="m-2 "> <a href="Contact.html"> Contact </a> </li>
+            <li class="m-2 ">  <a href="Portfolio.html" class="bg-rose-950 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> Portfolio </a> </li>
             
         </ul>
 
-        <!-- Separate button to lead to the next page -->
-       <a href="Portfolio.html"> Portfolio </a>
+ 
     </aside>
 
-    <footer id="footer">
-        <address class="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
+    <footer  class="bg-rose-950 flex-column text-center pt-15">
+        <aside class="text-center bg-rose-100 p-4 rounded-md shadow-xl w-60 m-20 mt-16 lg:hidden ">
+            <h3 class="text-2xl font-bold ">Quick Navigations</h3>
+            <ul class="text-center m-3 ">
+                        
+                <li class="m-2 "> <a href="index.html"> Home </a> </li>
+                <li class="m-2 "> <a href="Services.html"> Services </a> </li>
+                <li class="m-2 "> <a href="Contact.html"> Contact </a> </li>
+                <li class="m-2 ">  <a href="Portfolio.html" class="bg-rose-950 hover:bg-rose-900 text-white font-bold py-2 px-4 rounded inline-flex items-center"> Portfolio </a> </li>
+                
+            </ul>
+    
+     
+        </aside>
+
+        <address class="social-media-links text-rose-200 text-3xl flex justify-center">
+            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram ml-3 "></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram ml-3 "></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin ml-3"></i> </a>
+            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github ml-3 "></i> </a>     
 
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="text-rose-200"> ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
 </body>
 </html>
