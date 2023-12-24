@@ -4,138 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <i class="logo">BA</i>
-
-        <!-- A menu that will be visible in the header for mobile and tablet view but visible in the aside for the desktop view-->
-        <h3>Menu</h3>
-        <menu class="nav-list">
-           
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-
-        </menu>
-        <!-- icon for the drop down menu -->
-        <i class="fa-solid fa-chevron-down"></i>
+    <header class="bg-info justify-content-center h-25 p-20 ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-xl">
+                <div class="d-flex flex-column mx-auto"> 
+                    <div class="navbar-brand rounded  p-3 mx-lg-5 fst-italic fs-2 ">
+                        <i class="logo lead display-4 text-light mx-auto ">BA</i>
+                    </div>
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="m-1">Menu</span>
+                    <span class="fa fa-solid fa-chevron-down ms-end">  </span>
+                  </button>
+                </div>
+                
+              <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 text-light ms-10">
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="About_Me.html">About Me</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                  </li>
+                
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+                  
     </header>
 
-    <main>
-        <h1> ABOUT ME</h1>
+    <main class="position-relative fs-5 ">
+        <h1 class="display-1 text-center my-5" > ABOUT ME</h1>
 
-        <!-- profile image -->
-        <img src="images/normal.jpg" alt="profile-image">
+        <div class="d-md-flex justify-content-end ms-5 ps-3 ">
+            
 
+            <!-- profile image -->
+            <div class="col-6 col-md-2 col-lg-3 align-start mb-auto me-2 ">
+                <img src="images/normal.jpg" alt="profile-image" class="img-fluid rounded-circle w-10 h-25">
 
-        <!-- key personal information feilds -->
-        <h2>Personal Information</h2>
+            </div>
             
-        <dl>
-           
-            <dt>First Name</dt>
-            <dd>Bisrat</dd>
+
+            <!-- key personal information feilds -->
+            <div class="col-12 col-md-5 col-lg-4 bg-info rounded  ">
+                <h2 class="fs-1 fw-bold text-center mt-5 me-3 pt-3 pb-3 pe-3 ">Personal Information</h2>
+                
+                <dl class="row justify-content-center ps-lg-5">
+                
+                    <dt class="col-3">First Name</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">Bisrat</dd>
+                    
+                    <dt class="col-3">Last Name</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">Asaye</dd>
+                    
+                    <dt class="col-3">Age</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">21</dd>
+                    
+                    <dt class="col-3">Nationality</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">Ethiopian</dd>
+                    
+                    <dt class="col-3">Languages Spoken</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">
+                        <ul>
+                            <li>Amharic</li>
+                            <li>Afan Oromo</li>
+                            <li>English</li>
+                            <li>Arabic</li>
+                        </ul>
+                    </dd>
+                    
+                    <dt class="col-3">Education</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">Currenly attending a BSc of Software Engineering at Addis Ababa Institute of Technology</dd>
+                    
+                    <dt class="col-3">Professional Experience</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">
+                        <ul>
+                            <li>Fashion Modelling</li>
+                            <li>Website Design</li>
+                            <li>Web development</li>
+                            <li>Networking</li>
+                            <li>Java Programming</li>
+                            <li>Intermediate level Python Programming</li>
+                        </ul>
+                    </dd>
+                    
+                    <dt class="col-3">Current Status</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">
+                        Open for work on:
+                        <ul>
+                            <li>Website Design</li>
+                            <li>Web development</li>
+                            <li>Fashion Modelling and Advertising</li>
+                        </ul>
+                    </dd>
+                    
+                    <dt class="col-3">Address</dt>
+                    <dd class="col-8  fs-md-2 m-1 ">Addis Ababa, Ethiopia</dd>
+
+                    <dt class="col-3">Social Media Presence</dt>
+                    <dd class="col-8  fs-md-2 m-1 "><a href="#footer" class="text-danger">Here</a></dd>
+                </dl>
             
-            <dt>Last Name</dt>
-            <dd>Asaye</dd>
+            </div>
+        </div>
+
+            <div class="container p-3">
+                <h2 class="text-center">Achievements</h2>
+                <p>In the past few months I have two groundbreaking achievements. One is working on an Natural Language Processing based Amharic Spell Checker
+                that will soon be deployed. The other one is joining <abbr title="Africa to Silicon Valley">A2SV</abbr> which is a great place to aqcuire skills to ace in my career. </p>
             
-            <dt>Age</dt>
-            <dd>21</dd>
+            </div>
             
-            <dt>Nationality</dt>
-            <dd>Ethiopian</dd>
-            
-            <dt>Languages Spoken</dt>
-            <dd>
-                <ul>
-                    <li>Amharic</li>
-                    <li>Afan Oromo</li>
-                    <li>English</li>
-                    <li>Arabic</li>
+            <div class="container p-3">
+                <h2 class="text-center">Interests and Hobbies</h2>
+                <ul class="list-unstyled ">
+                    <li>Watching Movies</li>
+                    <li>Reading books in Sci-fi, History, Fantasy and Fiction genres</li>
+                    <li>Competitive Programming</li>
                 </ul>
-            </dd>
-            
-            <dt>Education</dt>
-            <dd>Currenly attending a BSc of Software Engineering at Addis Ababa Institute of Technology</dd>
-            
-            <dt>Professional Experience</dt>
-            <dd>
-                <ul>
-                    <li>Fashion Modelling</li>
-                    <li>Website Design</li>
-                    <li>Web development</li>
-                    <li>Networking</li>
-                    <li>Java Programming</li>
-                    <li>Intermediate level Python Programming</li>
-                </ul>
-            </dd>
-            
-            <dt>Current Status</dt>
-            <dd>
-                Open for work on:
-                <ul>
-                    <li>Website Design</li>
-                    <li>Web development</li>
-                    <li>Fashion Modelling and Advertising</li>
-                </ul>
-            </dd>
-            
-            <dt>Address</dt>
-            <dd>Addis Ababa, Ethiopia</dd>
-
-            <dt>Social Media Presence</dt>
-            <dd><a href="#footer">Here</a></dd>
-        </dl>
         
-        <h2>Achievements</h2>
-        <p>In the past few months I have two groundbreaking achievements. One is working on an Natural Language Processing based Amharic Spell Checker
-            that will soon be deployed. The other one is joining <abbr title="Africa to Silicon Valley">A2SV</abbr> which is a great place to aqcuire skills to ace in my career. </p>
-        <h2>Interests and Hobbies</h2>
-        <ul>
-            <li>Watching Movies</li>
-            <li>Reading books in Sci-fi, History, Fantasy and Fiction genres</li>
-            <li>Competitive Programming</li>
-        </ul>
-        <h2>Favorite qoute </h2>
-        <blockquote cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
-        </blockquote>
-        <cite>~Albert Einstein~</cite>
-        <h2>Places I've visited</h2>
-        <p>I've got the chance to visit China, Tianjin state in 2018.Explore a glimpse of the visit through the following video. </p>
-        <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk"  allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU"  allowfullscreen></iframe>
+            </div>
 
+            <div class="container blockquote p-3 ">
+                <h2 class="text-center">Favorite qoute </h2>
+                <blockquote cite="https://www.pbs.org/wgbh/nova/einstein/wisd-nf.html"> The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day."
+                </blockquote>
+
+                <div class="text-end me-2">
+                    <cite class="blockquote-footer">Albert Einstein~</cite>
+                </div>
+                
+            </div>
+        
+            
+            <div class="container p-3">
+                <h2 class="text-center">Places I've visited</h2>
+                <p>I've got the chance to visit China, Tianjin state in 2018.Explore a glimpse of the visit through the following video. </p>   
+
+            </div>
+
+            <div class="mx-auto flex ms-5 my-3">
+                <iframe src="https://www.youtube.com/embed/C8MbMdQ5Ytk"  allowfullscreen class="rounded ms-auto"></iframe>
+                <iframe src="https://www.youtube.com/embed/J-DWvXJlZuU"  allowfullscreen class="rounded ms-auto"></iframe>
+            </div>
+            <!-- an aside that will be visible only in a desktop view-->
+
+
+        
+        <aside class="p-lg-5 text-center min-vh-100 bg-light d-none d-md-flex flex-column position-absolute top-0 start-0">
+            <h3>Quick Navigations</h3>
+            <ul class="navbar-nav " >
+                        
+                <li class="fs-5 "> <a href="index.html " class="nav-link text-info "> Home </a> </li>
+                <li class="fs-5 "> <a href="Services.html " class="nav-link text-info "> Services </a> </li>
+                <li class="fs-5 "> <a href="Contact.html " class="nav-link text-info "> Contact </a> </li>
+                    <!-- Separate button to lead to the next page -->
+                <a href="Portfolio.html" class="btn btn-primary d-none d-md-flex" > Portfolio </a>
+                
+            </ul>
+
+        
+        </aside>
+    
+
+    
+    
 
     </main>
+    
 
-    <!-- an aside that will be visible only in a desktop view -->
-    <aside>
-        <h3>Quick Navigations</h3>
-        <ul>
-                    
-            <li> <a href="index.html"> Home </a> </li>
-            <li> <a href="Services.html"> Services </a> </li>
-            <li> <a href="Contact.html"> Contact </a> </li>
-            
-        </ul>
 
-        <!-- Separate button to lead to the next page -->
-       <a href="Portfolio.html"> Portfolio </a>
-    </aside>
-
-    <footer id="footer">
-        <address class="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
+   
+    
+    <footer class="d-flex flex-column bg-primary shadow-lg ">
+        <address class="social-media-links d-flex justify-content-center display-2">
+            <a href="https://t.me/Bisratasaye12" class="m-2"><i class="fa-brands fa-telegram text-black"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/" class="m-2"> <i class="fa-brands fa-instagram text-black"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/" class="m-2"> <i class="fa-brands fa-linkedin text-black"></i> </a>
+            <a href="https://github.com/Bisratasaye12" class="m-2"> <i class="fa-brands fa-github text-black"></i> </a>     
 
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="fs-3 text-center" > ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
 </body>
 </html>

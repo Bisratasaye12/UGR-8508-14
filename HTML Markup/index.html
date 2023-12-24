@@ -5,69 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home </title>
     <!-- icon store -->
+    
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
-    <header>
-        <i class="fa-solid fa-bars navigation-hamburger-menu"></i>
-        <i class="logo">BA</i>
-        <nav>
-            <ul>
-                <li> <a href="#"> Home </a> </li>
-                <li> <a href="About_Me.html"> About Me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-            </ul>
-        </nav>
-        <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank">Download Resume</a>
+    <header class="bg-info justify-content-center h-25 p-20 ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-xl">
+                <div class="navbar-brand rounded p-3 mx-lg-5 fst-italic fs-2 ">
+                    <i class="logo lead display-4 text-light ">BA</i>
+                </div>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 text-light ms-10">
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="About_Me.html">About Me</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                  </li>
                 
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+                  
     </header>
 
-    <main>
+    <main class="d-flex flex-column align-center justify-content-center p-3">
         <!-- Introduction -->
-        <section class="hero">
-            <h1 class="welcome">Hello, I'm Bisrat Asaye</h1>
-            <p>A 3rd-year software engineering student at Addis Ababa Institute of Technology.</p>
+        <section class="hero container-xl ">
+            <h1 class="text-center m-3 p-2 fs-1 ">Hello, I'm Bisrat Asaye</h1>
+            <p class="fs-4 lead">A 3rd-year software engineering student at Addis Ababa Institute of Technology.</p>
             <h2>Currently Engaged in </h2>
-            <span class="one">web development,</span>
-            <span class="two"> mobile applications,</span>
-            <span class="three">Graphic Designer,</span>
-            <span class="four">Fashion Model</span>
-            <span class="five">and more</span>
-            <p> Join me on this journey of turning concepts into digital wonders!</p>
+            <span class="one fs-4 lead ">web development,</span>
+            <span class="two fs-4 lead "> mobile applications,</span>
+            <span class="three fs-4 lead ">Graphic Designer,</span>
+            <span class="four fs-4 lead ">Fashion Model</span>
+            <span class="five fs-4 lead ">and more</span>
+            <p class="fs-4 lead "> Join me on this journey of turning concepts into digital wonders!</p>
+            <div class="main-btn m-5">
+              
+                <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume.pdf" target="_blank" class="btn btn-primary btn-lg m-5 d-none d-lg-inline">Download Resume</a>
+          
+            </div>
         </section>
 
-        <section class="profile-images">
-            <img src="images/normal.jpg" alt="portrait-normal-image" >
-            <img src="images/modelling_1_sm.jpg" alt="modelling-image-1">
-            <img src="images/modelling_2.jpg" alt="modelling-image-2">
-            
-            <!-- buttons to toggle between images-->
-            <div class="image-sliders">
-                <button class="prev"> &lt;</button>
-                <button class="next"> &gt;</button>
-            </div>
+      
+        <section class="profile-images d-flex overflow-x-scroll shadow-lg ms-10 container col-lg-3 row-lg-1 my-5 ">
 
-            <div class="active-image-indicators">
-                <!-- small circular image indicators-->
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-            </div>
+            
+                <img src="images/normal.jpg" alt="portrait-normal-image"  class="w-100 img-thumbnail " >
+           
+           
+                <img src="images/modelling_1_sm.jpg" alt="modelling-image-1" class="w-100 ">
+        
+                <img src="images/modelling_2.jpg" alt="modelling-image-2" class="w-100  ">
+           
+
+            
+           
+           
+            
         </section>
 
     </main>
 
-    <footer>
-        <address class="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
+    <footer class="d-flex flex-column bg-primary shadow-lg ">
+        <address class="social-media-links d-flex justify-content-center display-2">
+            <a href="https://t.me/Bisratasaye12" class="m-2"><i class="fa-brands fa-telegram text-black"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/" class="m-2"> <i class="fa-brands fa-instagram text-black"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/" class="m-2"> <i class="fa-brands fa-linkedin text-black"></i> </a>
+            <a href="https://github.com/Bisratasaye12" class="m-2"> <i class="fa-brands fa-github text-black"></i> </a>     
 
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="fs-3 text-center" > ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
 </body>
 
