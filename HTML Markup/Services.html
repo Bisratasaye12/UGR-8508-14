@@ -4,90 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
-    <header>
-        <i class="logo">BA</i>
-        <i class="fa-solid fa-bars navigation-hamburger-menu"></i>
+    <header class="bg-info justify-content-center h-25 p-20 ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-xl">
+                <div class="navbar-brand rounded p-3 mx-lg-5 fst-italic fs-2 bg-success rounded-circle">
+                    <i class="logo lead display-4 text-light ">BA</i>
+                </div>
 
-        <!-- A navigation list visible only in desktop view -->
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About Me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-            </ul>
-        </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 text-light ms-10">
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="About_Me.html">About Me</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                  </li>
+                
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+                  
     </header>
 
-    <main>
+    <main class="fs-5">
         <!-- There will be a background image that will be embedded by CSS.-->
-        <h1>SERVICES</h1>
-        <p>This is the page to explore the services I provide. Below are list of services</p>
-        
-        <section>
-            <i class="fa-solid fa-palette" ></i>
-            <h2>Graphic Design</h2>
-            <p>Elevate your brand's visual identity with our comprehensive graphic design services. From striking logos to cohesive branding solutions, we specialize in crafting designs that leave a lasting impression. With a keen eye for detail and a commitment to excellence, we transform concepts into captivating visuals.</p>
-        </section>
-        
-        <section>
-            <i class="fa-solid fa-globe"></i>
-            <h2>Web Development</h2>
-            <p>Here you can find cutting-edge industry standard website that are both responsive and accessible.</p>
-        </section>
+        <h1 class="display-1 m-3 text-center">SERVICES</h1>
+        <p class="text-center fs-5 mb-5 ">This is the page to explore the services I provide. Below are list of services</p>
 
-        <section>
-            <i class="fa-solid fa-code"></i>
-            <h2>Mobile Development</h2>
-            <p>We provide maintainable and user-centric mobile apps for business and for whom that seek digital presence in mobile platform.we specialize in creating sleek, responsive, and feature-rich applications that resonate with your audience.</p>
-        </section>
+        <div class="container-fluid m-3">
 
-        <section>
-            <i class="fa-solid fa-tv"></i>
-            <h2>Advertising</h2>
-            <p>We provide advertisement hosting on our social media interface and also through modeling.</p>
-        </section>
-
-        <section>
-            <i class="fa-solid fa-pen-ruler"></i>
-            <h2>UI/UX Design</h2>
-            <p>We provide friendly and currently most creative website and application user interface designs.</p>
-        </section>
-
-        <section>
-            <i class="fa-solid fa-network-wired"></i>
-            <h2>Networking</h2>
-            <p>Counsling and testing Network devices and configuration of routers and switches.</p>
-        </section>
+            <div class="row">
+              <section class="col-md-6">
+                <div class="d-flex ">
+                    <i class="fas fa-palette me-5 display-1"></i>
+                    <h2>Graphic Design</h2>
+                </div>
+                <p>Elevate your brand's visual identity with our comprehensive graphic design services. From striking logos to cohesive branding solutions, we specialize in crafting designs that leave a lasting impression. With a keen eye for detail and a commitment to excellence, we transform concepts into captivating visuals.</p>
+              </section>
+          
+              <section class="col-md-6">
+                <div class="d-flex ">
+                    <i class="fas fa-globe me-5 display-1"></i>
+                    <h2>Web Development</h2>
+                </div>
+                
+                <p>Here you can find cutting-edge industry standard websites that are both responsive and accessible.</p>
+              </section>
+            </div>
+          
+            <div class="row">
+              <section class="col-md-6 mb-3">
+                <div class="d-flex">
+                    <i class="fas fa-code me-5 display-1"></i>
+                    <h2>Mobile Development</h2>
+                </div>
+                
+                <p>We provide maintainable and user-centric mobile apps for business and for those seeking a digital presence on the mobile platform. We specialize in creating sleek, responsive, and feature-rich applications that resonate with your audience.</p>
+              </section>
+          
+              <section class="col-md-6">
+                <div class="d-flex ">
+                    <i class="fas fa-tv me-5 display-1"></i>
+                    <h2>Advertising</h2>
+                </div>
+              
+                <p>We provide advertisement hosting on our social media interface and also through modeling.</p>
+              </section>
+            </div>
+          
+            <div class="row">
+              <section class="col-md-6">
+                <div class="d-flex">
+                    <i class="fas fa-pen-ruler me-5 display-1"></i>
+                    <h2>UI/UX Design</h2>
+                </div>
+                
+                <p>We provide friendly and currently the most creative website and application user interface designs.</p>
+              </section>
+          
+              <section class="col-md-6">
+                <div class="d-flex">
+                    <i class="fas fa-network-wired me-5 display-1"></i>
+                    <h2>Networking</h2>
+                </div>
+                
+                <p>Counseling and testing network devices and configuration of routers and switches.</p>
+              </section>
+            </div>
+          
+            <aside class="col-md-3 rounded shadow bg-light m-3 pt-5 pb-5 px-3 fs-4 ms-auto me-3 d-none d-lg-flex flex-column">
+              <h2>Quick Links </h2>
+              <ul class="list-unstyled ">
+                <li>
+                  <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank" class="nav-link text-info ">Download Resume</a>
+                </li>
+                <li>
+                  <a href="Contact.html" class="nav-link text-info"> Contact </a>
+                </li>
+              </ul>
+            </aside>
+          
+          </div>
     </main>
 
-    <aside>
-        <h2>Quick Links </h2>
-        <ul>
-            <li>
-                <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank">Download Resume</a>
-                
-            </li>
+    
 
-            <li>
-                <a href="Contact.html"> Contact </a>
-            </li>
-        </ul>
-    </aside>
-
-    <footer>
-        <address id="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
+    <footer class="d-flex flex-column bg-primary shadow-lg ">
+        <aside class="col-md-3 rounded shadow bg-light m-3 pt-5 pb-5 px-3 fs-4 d-flex flex-column d-lg-none  m-3 mx-auto ">
+            <h2>Quick Links </h2>
+            <ul class="list-unstyled ">
+              <li>
+                <a href="https://drive.google.com/uc?export=download&id=1hD6Z3hC4th3_Jj_mMtHI9R5DkfwF1tAB" download="Resume" target="_blank" class="nav-link text-info ">Download Resume</a>
+              </li>
+              <li>
+                <a href="Contact.html" class="nav-link text-info"> Contact </a>
+              </li>
+            </ul>
+          </aside>
+        
+        <address class="social-media-links d-flex justify-content-center display-2">
+            <a href="https://t.me/Bisratasaye12" class="m-2"><i class="fa-brands fa-telegram text-black"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/" class="m-2"> <i class="fa-brands fa-instagram text-black"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/" class="m-2"> <i class="fa-brands fa-linkedin text-black"></i> </a>
+            <a href="https://github.com/Bisratasaye12" class="m-2"> <i class="fa-brands fa-github text-black"></i> </a>     
 
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="fs-3 text-center" > ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
 
 

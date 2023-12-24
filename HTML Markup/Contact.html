@@ -4,71 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
-    <header>
-        <i class="logo">BA</i>
-        <i class="fa-solid fa-bars navigation-hamburger-menu"></i>
+    <header class="bg-info justify-content-center h-25 p-20 ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-xl">
+                <div class="navbar-brand rounded p-3 mx-lg-5 fst-italic fs-2 bg-success rounded-circle ">
+                    <i class="logo lead display-4 text-light ">BA</i>
+                </div>
 
-        <!-- A navigation list visible only in desktop view -->
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Home </a> </li>
-                <li> <a href="About_Me.html"> About Me </a> </li>
-                <li> <a href="Portfolio.html"> Portfolio </a> </li>
-                <li> <a href="Services.html"> Services </a> </li>
-                <li> <a href="Contact.html"> Contact </a> </li>
-            </ul>
-        </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 text-light ms-10">
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="About_Me.html">About Me</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+                  </li>
+                  <li class="nav-item  m-2 btn btn-outline-success text-light">
+                    <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                  </li>
+                
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+                  
     </header>
 
     <main>
-        <h1>CONTACT</h1>
-        <p>I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
+        <h1 class="display-1 text-center m-5 ">CONTACT</h1>
+        <p class="m-3 fs-4">I'm currently open for remote and in-person works. You can either contact me using <a href="#social-media-links" class="nav-link text-info d-inline"> social media platforms</a> or Share your comment, ideas and job offer using the following feild. </p>
 
 
-        <form action="process_form" method="post">
-            
-            <input type="email"  name="email" placeholder="email">
-        
-            
-            <input type="text" name="name" placeholder="your name" required>
-        
-            
-            <textarea id="message" name="message" placeholder="message" rows="5" required></textarea>
-        
-            <input type="submit" value="Submit">
-        </form>
-        
-    </main>
+        <div class="container-fluid">
 
-    <aside>
-        <h2>Direct Contact</h2>
-        <ul>
-            <li>Tel: +251973056501</li>
-            <li><a href="mailto:bisratplus@gmail.com"> bisratplus@gmail.com</a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
+            <div class="row">
+          
+              <!-- Form Section -->
+              <div class="col-md-6 fs-4 ms-5 ">
+                <form   action="https://formsubmit.co/bisratplus@gmail.com"
+                        method="POST"
+                        class="contact"
+                        id="commentForm">
+
+                  <div class="form-group my-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                  </div>
+          
+                  <div class="form-group my-3">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                  </div>
+          
+                  <div class="form-group my-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                  </div>
+          
+                  <button onclick="sendMail()" type="submit" class="btn btn-primary my-3">Submit</button>
+                </form>
+              </div>
+          
+              <!-- Aside Section -->
+              <aside class="col-md-4 col-lg-3 bg-light rounded shadow-lg d-none d-md-flex flex-column ms-auto p-5">
+                <h2>Direct Contact</h2>
+                <ul>
+                  <li>Tel: +251973056501</li>
+                  <li><a href="mailto:bisratplus@gmail.com">bisratplus@gmail.com</a></li>
+                </ul>
+          
+                <h2>Address</h2>
+                <address class="address">
+                  <ul>
+                    <li>Addis Ababa, Ethiopia</li>
+                    <li>P.O.Box 12345</li>
+                  </ul>
+                </address>
+              </aside>
+          
+            </div>
+          
+          </div>
+    </main>     
+
+    <footer class="d-flex flex-column bg-primary shadow-lg ">
+        <aside class="col-md-3 bg-light rounded shadow-lg m-5 p-3 d-md-none">
+            <h2>Direct Contact</h2>
             <ul>
+              <li>Tel: +251973056501</li>
+              <li><a href="mailto:bisratplus@gmail.com">bisratplus@gmail.com</a></li>
+            </ul>
+      
+            <h2>Address</h2>
+            <address class="address">
+              <ul>
                 <li>Addis Ababa, Ethiopia</li>
                 <li>P.O.Box 12345</li>
-            </ul>
-            
-        </address>
-    </aside>
+              </ul>
+            </address>
+          </aside>
+      
+     
+        
+        <address class="social-media-links d-flex justify-content-center display-2">
+            <a href="https://t.me/Bisratasaye12" class="m-2"><i class="fa-brands fa-telegram text-black"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/" class="m-2"> <i class="fa-brands fa-instagram text-black"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/" class="m-2"> <i class="fa-brands fa-linkedin text-black"></i> </a>
+            <a href="https://github.com/Bisratasaye12" class="m-2"> <i class="fa-brands fa-github text-black"></i> </a>     
 
-    <footer>
-        <address id="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
-
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="fs-3 text-center" > ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
 
+    <script src="JS/javascript.js"></script>
 </body>
 </html>
