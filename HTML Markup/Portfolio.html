@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/552d0df6f7.js" crossorigin="anonymous"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    
 
 </head>
 <body>
@@ -47,177 +48,193 @@
                   
     </header>
 
-    <main>
-        <h2> PORTFOLIO </h2>
-        <article>
-            <h3>Skills</h3>
-            <!-- Background image will be added using CSS -->
-            <!-- sections that will show one at a time using sliders -->
-            
-            <section class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Python</h4>
-                    <p class="card-text">I possess intermediate-level proficiency in Python.  My skills extend to working with data structures, handling exceptions, and implementing object-oriented programming principles. </p>
-                </div>
-                </section>
-
-            
-            <section>
-                <h4>OOP</h4>
-                <p> I have a work-ready skill on Object Oriented programming specially through Java Programming language. </p>
-            </section>
-
-            
-            <section>
-                <h4>Design</h4>
-                <p>I have a hands-on experience in UI/UX design using Figma.</p>
-            </section>
-
-            
-            <section>
-                <h4>Web development</h4>
-                <p>I currently have MERN web development stack.</p>
-            </section>
-
-          
-
-        </article>
-
-        <article>
-            <h3>Projects</h3>
-
-            <section>
+    <main class="row justify-content-start position-relative">
+        
+        <div class="col-lg-9">
+            <h2 class="text-center m-5 display-1">PORTFOLIO</h2>
+        
+            <article class="row">
                 
-                <h4>Calculator</h4>
-                <p>Calculator using HTML, CSS and javascript.</p>
-            </section>
+                <div class="col-md-6">
+                    <h3 class="text-center">Skills</h3>
+                    <article class="d-flex flex-nowrap overflow-x-hidden mx-3 my-5 rounded shadow-lg">
+                        <section class="flex-shrink-0 card m-2 p-3 col-12 w-100 mySlides1 ">
+                            <div class="card-body">
+                                
+                                <h4 class="card-title">Python</h4>
+                                <p class="card-text">I possess intermediate-level proficiency in Python. My skills extend to working with data structures, handling exceptions, and implementing object-oriented programming principles.</p>
+                            </div>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100 mySlides1">
+                            <h4>OOP</h4>
+                            <p>I have a work-ready skill on Object Oriented programming, especially through Java Programming language.</p>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100 mySlides1">
+                            <h4>Design</h4>
+                            <p>I have hands-on experience in UI/UX design using Figma.</p>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100 mySlides1">
+                            <h4>Web development</h4>
+                            <p>I currently have experience with the MERN web development stack.</p>
+                        </section>
+                    </article>
+
+                    <div class="d-flex justify-content-center my-4   ">
+                        <a class="prev btn btn-secondary mx-3  " onclick="plusSlides(-1, 'mySlides1')">&#10094;</a>
+                        <a class="next btn btn-secondary mx-3 " onclick="plusSlides(1, 'mySlides1')">&#10095;</a>
+                    </div>
+                </div>
+        
+                <div class="col-md-6 ">
+                    <h3 class="text-center " >Projects</h3>
+                    <article class="d-flex flex-nowrap  overflow-x-hidden mx-3 my-5 rounded shadow-lg">
+                        <section class="flex-shrink-0 card m-2 p-3 w-100 mySlides2 ">
+                            
+                            <h4>Calculator</h4>
+                            <p>Calculator using HTML, CSS and JavaScript.</p>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100 mySlides2">
+                            <h4>Website</h4>
+                            <p>Profile and portfolio website using HTML, CSS, and JavaScript.</p>
+                        </section>
+                    </article>
+
+                    <div class="d-flex justify-content-center my-4  ">
+                        <a class="prev btn btn-secondary mx-3  " onclick="plusSlides(-1 ,'mySlides2')">&#10094;</a>
+                        <a class="next btn btn-secondary mx-3 " onclick="plusSlides(1 ,'mySlides2')">&#10095;</a>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="row">
+                
+                <div class="col-md-6">
+                    <h3 class="text-center">Certifications</h3>
+                    <article class="d-flex flex-nowrap  overflow-x-hidden mx-3 my-5 rounded shadow-lg">
+                        <section class="flex-shrink-0 card m-2 p-3 w-100  mySlides3">
+                            
+                            <h4>VMware</h4>
+                            <ul>
+                                <li>VMware Software Defined Storage concept certification</li>
+                                <li>VMware Network virtualization concepts</li>
+                            </ul>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100  mySlides3">
+                            <h4>Hackerrank</h4>
+                            <ul>
+                                <li>Hackerrank basic Java concepts certification</li>
+                                <li>Hackerrank basic Python certification</li>
+                            </ul>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100  mySlides3">
+                            <h4>Cisco</h4>
+                            <p>Cisco Networking Essential certification</p>
+                        </section>
+                    </article>
+
+                    <div class="d-flex justify-content-center my-4  ">
+                        <a class="prev btn btn-secondary mx-3  " onclick="plusSlides(-1 , 'mySlides3')">&#10094;</a>
+                        <a class="next btn btn-secondary mx-3 " onclick="plusSlides(1 , 'mySlides3')">&#10095;</a>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <h3 class="text-center">Experiences</h3>
+                    <article class="d-flex flex-nowrap  overflow-x-hidden mx-3 my-5 rounded shadow-lg">
+                        <section class="flex-shrink-0 card m-2 p-3  w-100 mySlides4">
+                            
+                            <h4>Bootcamp</h4>
+                            <ul>
+                                <li>Freecodecamp's web development bootcamp</li>
+                                <li>Freecodecamp's scientific computing with Python</li>
+                            </ul>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100 mySlides4 ">
+                            <h4>Course</h4>
+                            <ul>
+                                <li>Frontend Masters intense work-ready fullstack web development program.</li>
+                                <li>Frontend Masters Database and basic Linux Introduction course.</li>
+                            </ul>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3 w-100  mySlides4">
+                            <h4>Software Development</h4>
+                            <p>Amharic Spell checking software production</p>
+                        </section>
+        
+                        <section class="flex-shrink-0 card m-2 p-3  w-100  mySlides4">
+                            <h4>Modelling</h4>
+                            <p>Charity and commercial Fashion shows.</p>
+                        </section>
+                    </article>
+                    <div class="d-flex justify-content-center my-4   ">
+                        <a class="prev btn btn-secondary mx-3  " onclick="plusSlides(-1 , 'mySlides4')">&#10094;</a>
+                        <a class="next btn btn-secondary mx-3 " onclick="plusSlides(1 , 'mySlides4')">&#10095;</a>
+                    </div>
+                </div>
+            </article>
 
             
-            <section>
-                <h4>Website</h4>
-                <p>profile and portfolio website using HTML, CSS and javascript.</p>
-            </section>
+        <aside class="card p-3 bg-light shadow d-none d-lg-flex flex-column col-3 h-100 mb-2 position-absolute top-0 end-0 pt-5">
+            <h2>Links to Projects and Certificates</h2>
+            <a href="https://github.com/Bisratasaye12/Projects" class="nav-link text-info fs-5 m-1 "> Projects </a>
+            <a href="https://www.credly.com/badges/51250146-652c-4944-ae0f-f1301b8a6bee" class="nav-link text-info fs-5 m-1 "> Vmware Network virtualization Certificate </a>
+            <a href="https://www.credly.com/badges/c7ea6e04-9eb8-49e3-a341-347a516e2718" class="nav-link text-info fs-5 m-1 "> VMware Software Defined Storage Certificate</a>
+            <a href="https://www.hackerrank.com/profile/bisratplus" class="nav-link text-info fs-5 m-1 "> Hackerrank Certificates </a>
+            <a href="https://lms.netacad.com/course/view.php?id=1970024" class="nav-link text-info fs-5 m-1 "> Cisco Networking Essential Certificate</a>
 
+
+            <!-- button leading to next page -->
+            <div class="container-fluid m-3 d-none d-lg-flex">
+                <a href="Services.html" class="btn btn-info "> Services</a>
+            </div>
+        </aside>
+
+        </div>
+
+        <div class="container-fluid m-5 d-lg-none d-flex">
+            <a href="Services.html" class="btn btn-info "> Services</a>
+        </div>
+
+    </main>
+    
+
+
+    <footer class="d-flex flex-column bg-primary shadow-lg ">
+        <aside class="card p-3 bg-light shadow d-flex flex-column d-lg-none m-3 pt-5 ">
+            <h2>Links to Projects and Certificates</h2>
+            <a href="https://github.com/Bisratasaye12/Projects" class="nav-link text-info fs-5 m-1 "> Projects </a>
+            <a href="https://www.credly.com/badges/51250146-652c-4944-ae0f-f1301b8a6bee" class="nav-link text-info fs-5 m-1 "> Vmware Network virtualization Certificate </a>
+            <a href="https://www.credly.com/badges/c7ea6e04-9eb8-49e3-a341-347a516e2718" class="nav-link text-info fs-5 m-1 "> VMware Software Defined Storage Certificate</a>
+            <a href="https://www.hackerrank.com/profile/bisratplus" class="nav-link text-info fs-5 m-1 "> Hackerrank Certificates </a>
+            <a href="https://lms.netacad.com/course/view.php?id=1970024" class="nav-link text-info fs-5 m-1 "> Cisco Networking Essential Certificate</a>
+    
+    
+            <!-- button leading to next page -->
+            <div class="container-fluid m-3 ">
+                <a href="Services.html" class="btn btn-info "> Services</a>
+            </div>
+        </aside>
    
 
-        </article>
 
-        <article>
-            <h3> Certifications </h3>
-
-            
-            <section>
-                <h4>VMware</h4>
-                <ul>
-                    <li>VMware Software Defined Storage concept certification</li>
-                    <li>VMware Network virtualization concepts</li>
-                </ul>
-            </section>
-
-            
-            <section>
-                <h4>Hackerrank</h4>
-                <ul>
-                    <li>Hackerrank basic java concepts certification</li>
-                    <li>Hackerrank basic python certification</li>
-                </ul>
-            </section>
-
-        
-            
-            <section>
-                <h4>Cisco</h4>
-                <p>Cisco Networking Essential certification</p>
-            </section>
-
-            <!-- buttons to toggle between sections-->
-            <div class="image-sliders">
-                <button class="prev"> &lt;</button>
-                <button class="next"> &gt;</button>
-            </div>
-
-            <div class="active-image-indicators">
-                <!-- small circular section indicators-->
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-
-            </div>
-        </article>
-
-        <article>
-            <h3>Experiences</h3>
-            <section>
-                <h4>bootcamp</h4>
-                <ul>
-                    <li>Freecodecamp's web development bootcamp</li>
-                    <li>Freecodecamp's scientific computing with python</li>
-                </ul>
-            </section>
-
-            
-            <section>
-                <h4>Course</h4>
-                <ul>
-                    <li>Frontend Masters intense work-ready fullstack web development program.</li>
-                    <li>Frontend Masters Database and basic linux Introduction course.</li>
-                </ul>
-                           
-            </section>
-
-           
-            <section>
-                <h4>Software Development</h4>
-                <p>Amharic Spell checking software production</p>
-            </section>
-
-            
-            <section>
-                <h4>Modelling</h4>
-                <p>Charity and commercial Fashion shows.</p>
-            </section>
-
-            
-            <!-- buttons to toggle between sections-->
-            <div class="image-sliders">
-                <button class="prev"> &lt;</button>
-                <button class="next"> &gt;</button>
-            </div>
-
-            <div class="active-image-indicators">
-                <!-- small circular section indicators-->
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-
-            </div>
-        </article>
-    </main>
-
-    <aside>
-        <h2>Links to Projects and Certificates</h2>
-        <a href="https://github.com/Bisratasaye12/Projects"> Projects </a>
-        <a href="https://www.credly.com/badges/51250146-652c-4944-ae0f-f1301b8a6bee"> Vmware Network virtualization Certificate </a>
-        <a href="https://www.credly.com/badges/c7ea6e04-9eb8-49e3-a341-347a516e2718"> VMware Software Defined Storage Certificate</a>
-        <a href="https://www.hackerrank.com/profile/bisratplus"> Hackerrank Certificates </a>
-        <a href="https://lms.netacad.com/course/view.php?id=1970024"> Cisco Networking Essential Certificate</a>
-
-
-        <!-- button leading to next page -->
-        <a href="Services.html"> Services</a>
-    </aside>
-
-    <footer>
-        <address class="social-media-links">
-            <a href="https://t.me/Bisratasaye12"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.instagram.com/modelbisratasaye/"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/"> <i class="fa-brands fa-linkedin"></i> </a>
-            <a href="https://github.com/Bisratasaye12"> <i class="fa-brands fa-github"></i> </a>     
+        <address class="social-media-links d-flex justify-content-center display-2">
+            <a href="https://t.me/Bisratasaye12" class="m-2"><i class="fa-brands fa-telegram text-black"></i></a>
+            <a href="https://www.instagram.com/modelbisratasaye/" class="m-2"> <i class="fa-brands fa-instagram text-black"></i> </a>
+            <a href="https://www.linkedin.com/in/bisrat-asaye-446783274/" class="m-2"> <i class="fa-brands fa-linkedin text-black"></i> </a>
+            <a href="https://github.com/Bisratasaye12" class="m-2"> <i class="fa-brands fa-github text-black"></i> </a>     
 
         </address>
-        <p> ©️ All rights reserved. Bisrat Asaye 2023 </p>
+        <p class="fs-3 text-center" > ©️ All rights reserved. Bisrat Asaye 2023 </p>
     </footer>
-    
+
+    <script src="JS/index.js"></script>
 </body>
 </html>
